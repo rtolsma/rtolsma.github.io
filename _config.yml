@@ -21,7 +21,7 @@
 title: Ryan Tolsma
 email: rtolsma@stanford.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog and personal website for a curious, passionate problem solver.
+  A simple blog and personal website for a curious, passionate problem solver.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
