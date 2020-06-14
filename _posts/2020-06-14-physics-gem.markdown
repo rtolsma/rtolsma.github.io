@@ -6,7 +6,7 @@ categories: physics
 
 Sometimes I find myself so enthralled by aesthetic theoretical machinery that I can't resist sharing. These types of posts are usually geared towards those with basic to advanced
 undergraduate understandings of mathematics, and are moreso exposition than anything else. Here are two fun tidbits I'd like to share from Stanford's Graduate Quantum Mechanics class
-I took last year under the amazing professor (Patrick Hayden)[https://sitp.stanford.edu/people/patrick-hayden].
+I took last year under the amazing professor [Patrick Hayden](https://sitp.stanford.edu/people/patrick-hayden).
 
 
 ## Schrodinger's Equation
