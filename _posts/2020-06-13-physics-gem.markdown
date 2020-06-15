@@ -76,7 +76,7 @@ Now this here is Schrodinger's complete equation in all its glory. A simple eleg
 
 ### Time Independent Equation
 
-A lot of people have probably heard of two versions of Schrodinger's: the time dependent, and the time dependent. The exposition above focused on the time dependent, as the slightly more
+A lot of people have probably heard of two versions of Schrodinger's: the time independent, and the time dependent. The exposition above focused on the time dependent, as the slightly more
 interesting version in my opinion. The time independent Schrodinger equation is merely an eigenvalue-eigenvector equation: $$H\vert \varphi \rangle = E_n \vert \varphi \rangle$$. For reasons
 better understood via a thorough treatment of classical mechanics, the operator $$H(t)$$ we referred to is the classical analog of the Hamiltonian matrix, whose eigenvalues correspond
 to the possible energy levels of a system. The time independent Schrodinger's equation thus corresponds to finding the steady-state solutions of a system.
