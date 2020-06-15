@@ -41,7 +41,7 @@ dehumanizing -- inarguably leads to higher outputs. In order to operate efficien
 begins with accurately measuring employee outputs.
 
 
-So how can we solve mitigate the apparent labor market inefficiencies staring us in the eye? Unforunately the current options are rather limiting. For employees, personal websites and
+What can we do? For employees, personal websites and
 social network profiles like LinkedIn afford the opportunity to provide greater detail insights into projects and work experiences, but these methods suffer from embellishment and
 personal biases rather often. What we need are better platforms and processes for gathering metrics over time, data that can illustrate trajectories and growth in addition to 
 performance. Internally, large bureaucratic corporations can foster these forms of analysis over time, tracking employee reviews and key performance indicators in a rigorous manner for continuous
