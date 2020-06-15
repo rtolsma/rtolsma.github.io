@@ -2,6 +2,7 @@
 layout: "post"
 title:  "Demistiyfing Schrodinger's Equation"
 categories: physics
+comments: true
 ---
 
 Sometimes I find myself so enthralled by aesthetic theoretical machinery that I can't resist sharing. These types of posts are usually geared towards those with basic to advanced
