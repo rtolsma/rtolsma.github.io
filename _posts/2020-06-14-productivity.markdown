@@ -25,8 +25,8 @@ applicants. As a side effect, this hiring process yields poor indicators of true
 employees, they err towards safety and offer less scalable and diverse compensation levels. Interviewees on the other hand, tend to have very little leverage in these negotiations; rarely does any worker
 understand their value beyond relative performance to immediate coworkers and at best maintain some foggy insight into their contributions[^5] towards a company's bottom line on which to justify their asking price. 
 
-Fortunately, startups can often relieve the fair-value seeking employee's woes. By their very nature, startups are lean and risk-taking and can afford to spend greater care and detail
-with an individualized hiring process as these investments represent greater impact on likelihood of success. Due to these refined measurements, and the urgent desires for talent and productivity in earlier
+Fortunately, startups can often relieve the fair-value seeking employee's woes. By their very nature, startups are lean and risk-taking. As such, they require greater care and detail
+with an individualized hiring process as these investments represent greater impact on their relative likelihoods of success. Due to these refined measurements, and the urgent desires for talent and productivity in earlier
 stages, startups are often capable of offering higher risk-adjusted returns. However, this unfortunately does not significantly improve the situation. Employees now are faced with two 
 contrasting decisions: low-risk sub-optimal risk-adjusted careers on one end, or high risk fairer risk-adjusted returns. For most people, responsibilities and dependents prevent the latter
 from ever posing a real option, and for this reason startups are inhibited from exuding necessary upwards pressure on the compensation delivered by larger competitors.
@@ -41,10 +41,7 @@ to the dramatic shifts in demand. While each of these examples represents fields
 dehumanizing -- inarguably leads to higher outputs. In order to operate efficiently and effectively, companies need to understand their costs of production, and in the skilled service sector, that
 begins with accurately measuring employee outputs.
 
-$420/hr
-
 ￼
-
 What can we do? For employees, personal websites and
 social network profiles like LinkedIn afford the opportunity to provide greater detail insights into projects and work experiences, but these methods suffer from embellishment and
 personal biases rather often. What we need are better platforms and processes for gathering metrics over time, data that can illustrate trajectories and growth in addition to 
