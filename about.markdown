@@ -13,9 +13,9 @@ algorithms for multi-agent reinforcement learning and dealing with nonstationary
 at a propietary trading firm, software engineering at a small startup, and quantitative research in fintech. During my free time, I enjoy playing poker
 and board games with friends, reading technical textbooks, and watching TV.
 
-I have a passion for teaching and explaining complex concepts into intuitive digestable components. My personal beliefs are that
+I have a passion for teaching and decomposing complex concepts into intuitive digestable components. My personal beliefs are that
 strong foundations in theory have compounded returns over time and vastly accelerate and simplify the process of learning new fields. 
-My current goals primarily focus on intensive learning and establishing expertise across a variety of technical fields.
+My current goals primarily center on intensive learning and establishing expertise across a variety of technical fields.
 
 
 Please feel free to reach out to me via email at rtolsma@stanford.edu if you any questions or inquiries, especially about any of my posts!
