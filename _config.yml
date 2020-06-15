@@ -29,7 +29,7 @@ github_username:  rtolsma
 linkedin_username: rtolsma
 
 disqus:
-  shortname: "ryantolsma-com"
+  shortname: "nvm" #"ryantolsma-com"
 
 markdown: kramdown
 
