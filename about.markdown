@@ -11,7 +11,7 @@ interested in pure mathematics and its applications in physics and machine learn
 real world problems. At Stanford, I perform research in Stanford's Iliad Lab focusing on developing better
 algorithms for multi-agent reinforcement learning and dealing with nonstationary environments. In my past, I've worked in quantitative trading
 at a propietary trading firm, software engineering at a small startup, and quantitative research in fintech. During my free time, I enjoy playing poker
-and board games with friends, reading technical textbooks, and watching TV.
+and board games with friends, reading textbooks, and watching TV.
 
 I have a passion for teaching and decomposing complex concepts into intuitive digestable components. My personal beliefs are that
 strong foundations in theory have compounded returns over time and vastly accelerate and simplify the process of learning new fields. 
