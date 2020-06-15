@@ -41,6 +41,9 @@ to the dramatic shifts in demand. While each of these examples represents fields
 dehumanizing -- inarguably leads to higher outputs. In order to operate efficiently and effectively, companies need to understand their costs of production, and in the skilled service sector, that
 begins with accurately measuring employee outputs.
 
+$420/hr
+
+￼
 
 What can we do? For employees, personal websites and
 social network profiles like LinkedIn afford the opportunity to provide greater detail insights into projects and work experiences, but these methods suffer from embellishment and
@@ -56,9 +59,9 @@ any examples or data that can offer better insights. Thanks for reading the post
 
 
 ### Footnotes
-[^1]: For those interested on alternative decision making frameworks, a personal favorite of mine is [regret minimization](https://en.wikipedia.org/wiki/Regret_(decision_theory))
+[^1]: For those interested in alternative decision making frameworks, a personal favorite of mine is [regret minimization](https://en.wikipedia.org/wiki/Regret_(decision_theory))
 [^2]: A favorite of mine _The Innovator's Dilemma_ and the sequel _The Innovator's Solution_ discusses this in depth.
 [^3]: Look at all of the aerospace graduate students at the end of the Cold War.
 [^4]: Technically, this more analagous to minimzing $$\sigma_R$$ given a baseline cutoff constraint on $$E[R]$$. See [mean variance portfolio optimization](https://en.wikipedia.org/wiki/Modern_portfolio_theory#Risk_and_expected_return) for more details if you are interested.
-[^5]: More precisely, I mean counterfactual contributions here. If a salesperson signs a 1,000,000$ worth of contracts, but given the company's brand, products, and reputation, any random kid off the block could sell 900,000$, then it's fairly clear the salesperson's contribution is less significant. Measuring the true contribution requires either broad experimentation (by means of acquiring accurate baselines) or a more sophisticated analysis of the other factors in play. Check out [Shapley Values](https://en.wikipedia.org/wiki/Shapley_value) if you're interested in understanding some relevant theory.
+[^5]: More precisely, I mean counterfactual contributions here. If a salesperson signs a 1,000,000$ worth of contracts, but given the company's brand, products, and reputation, any random kid off the block could sell 900,000$, then it's fairly clear the salesperson's contribution is less significant. Measuring the true contribution requires either broad experimentation (by means of acquiring accurate baselines) or a more sophisticated analysis of the other factors in play. Check out [Shapley Values](https://en.wikipedia.org/wiki/Shapley_value) for understanding some relevant theory.
 [^6]: Some firms like TripleByte or CodeSignal in the tech industry attempt to reduce costs by centralizing user data from the technical interview process. However, this is little more than cost indirection, and still leads to gamable noisy signals (LeetCode anyone?) with the addition of incentives which reduce effectiveness -- recruiters only want to source successful hires, but then most people they want to/do work with were probably capable or successful independently to begin with.
