@@ -6,7 +6,7 @@ comments: true
 ---
 
 Sometimes I find myself so enthralled by aesthetic theoretical machinery that I can't resist sharing. These types of posts are usually geared towards those with basic to advanced
-undergraduate understandings of mathematics, and are moreso exposition than anything else. Here are two fun tidbits I'd like to share from Stanford's Graduate Quantum Mechanics class
+undergraduate understandings of mathematics, and are more so exposition than anything else. Here are two fun tidbits I'd like to share from Stanford's Graduate Quantum Mechanics class
 I took last year under the amazing professor [Patrick Hayden](https://sitp.stanford.edu/people/patrick-hayden).
 
 
@@ -31,7 +31,7 @@ we write $$\vert \varphi \rangle$$ (a Ket) to represent a vector $$\varphi \in \
 
 
 In quantum mechanics, we associate observable properties -- position, momentum, spin -- to operators that act on states on our Hilbert Space. In practice, we can view these operators as 
-(sometimes infinite-dimensional) matrices acting as vectors as in standard linear algebra. Measurable values of these observables -- like a particle moving at 0.99c -- correspond to eigenvalues
+(sometimes infinite-dimensional) matrices acting on vectors as in standard linear algebra. Measurable values of these observables -- like a particle moving at 0.99c -- correspond to eigenvalues
 of their corresponding operator. I won't go into any of the philosophy of _why_ we choose this framework, but I encourage the interested reader to engage in other (likely more well-versed) sources.
 Since eigenvalues correspond to actual measurements, we want to ensure that these values are real and not complex. Enforcing matrices to only maintain real eigenvalues by the [Spectral Theorem]()
 directly corresponds to a property called self-adjointness (also known as Hermitian): a self-adjoint/Hermitian matrix $$M$$ is required to satisfy $$M^\dagger = M$$ where $$M^\dagger$$ denotes the complex-conjugate transpose. So in brief, Axiom 2 just asserts that all operators need to be self-adjoint in order to have meaningful observations.
