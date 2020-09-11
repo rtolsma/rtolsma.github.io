@@ -1,0 +1,6 @@
+---
+layout: "post"
+title: "Humanizing Productivity"
+categories: "thoughts"
+published: false
+---
