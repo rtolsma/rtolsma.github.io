@@ -30,12 +30,7 @@ Consider an arbitrary $$N$$-Polygon in the plane and construct a new polygon by 
 
 Two real numbers $$x,y$$ are sampled from unknown probability distributions with continuous support on $$\mathbb{R}$$ and written down in separate envelopes. A random envelope is opened and the value is revealed. Now, you are given the option to stick with the revealed value or instead go with the value hidden in the second envelope. Design a strategy to choose the larger of the two values with $$>\frac{1}{2}$$ probability. 
 
-'''
-
-Hint:
-
-Think of strategies that work for known distributions and try to generalize
-'''
+Hint: Think of strategies that work for known distributions and try to generalize
 
 #### Part 2
 
