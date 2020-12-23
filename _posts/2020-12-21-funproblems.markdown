@@ -3,7 +3,7 @@ layout: post
 title: "Fun Puzzles"
 categories: math 
 comments: true
-published: true 
+published: false 
 ---
 
 Here I present a short collection of some of my favorite short (accesssible) probability or mathematical puzzles. Some of these are not particularly difficult, but nearly all have either non-intuitive results or very clever solutions to strive for. I will try and update this post as I discover and remember similar kinds of puzzles. Hopefully, everyone finds these as enjoyable as I do!
