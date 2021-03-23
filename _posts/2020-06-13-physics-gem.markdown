@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title:  "Demistiyfing Schrodinger's Equation"
+title:  "Demistifying Schrodinger's Equation"
 categories: physics
 comments: true
 ---
