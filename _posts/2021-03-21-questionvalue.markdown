@@ -21,7 +21,7 @@ I figured the header needed a catchy name so I'll present the results in a form 
 2. Which predictor is optimal in this scenario? What is your expected reward?
     
     
-3. You have an insider on the contest who's willing to help you out. You can ask them a single yes or no question to help you decide on your predictor. What is an optimal question to ask? Denote the random variable $$Z$$ as the answer to your question. Compute $$H(Y\vert Z)$$ and your expected reward conditioning on this information. Hint: The expected value of the half-normal distribution is given by $$E[A \vert A > 0] = \sigma \sqrt{\f{2}{\pi}}$$ where $$A\sim N(0, \sigma^2)$$.
+3. You have an insider on the contest who's willing to help you out. You can ask them a single yes or no question to help you decide on your predictor. What is an optimal question to ask? Denote the random variable $$Z$$ as the answer to your question. Compute $$H(Y\vert Z)$$ and your expected reward conditioning on this information. Hint: The expected value of the half-normal distribution is given by $$E[A \vert A > 0] = \sigma \sqrt{\frac{2}{\pi}}$$ where $$A\sim N(0, \sigma^2)$$.
     
     
 4. Is there another question you could have asked, $$Z'$$, that gives you the same amount of information, but yields lower reward?
