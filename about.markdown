@@ -18,4 +18,4 @@ strong foundations in theory have compounded returns over time and vastly accele
 My current goals primarily center on intensive learning and establishing expertise across a variety of technical fields.
 
 
-Please feel free to reach out to me via email at rtolsma@stanford.edu if you any questions or inquiries, especially about any of my posts! 
+Please feel free to reach out to me via email at rtolsma@stanford.edu if you any questions or inquiries, especially about any of my posts!
