@@ -35,4 +35,4 @@ I figured the header needed a catchy name so I'll present the results in a form 
     
 7. Given the choice between learning the first $$m$$ variable values, or the ability to ask $$k$$ yes or no questions in succession, which should you choose? Describe your answers in terms of $$m,k$$ and the given variables. Hint: You may want to check out the [Truncated Normal](https://en.wikipedia.org/wiki/Truncated_normal_distribution) and try writing some code as this part can get messy.
 
-8. Does the optimal series of $$k$$ questions also maximize information?
+8. Does the optimal series of $$k$$ questions satisfy $$H(Z_k) = 1$$?
