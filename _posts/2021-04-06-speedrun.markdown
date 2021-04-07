@@ -1,0 +1,140 @@
+---
+layout: post
+title: "Physics Speedrun: Special Relativity"
+categories: physics
+comments: true
+published: true
+---
+
+In this post, I will attempt to derive and explain some consequences of special relativity as fast as possible, starting only with the invariance of physics in inertial frames and the constancy of the speed of light. I will assume basic familiarity of Lagrangian mechanics and Einstein summation convention.
+
+
+
+## Basics
+
+Consider a particle moving at the speed of light along the $$x$$-axis, such that $$ x = \pm ct$$ and the other coordinates are constant. Note that $$c^2t^2 -x^2=0$$. Since this must be invariant under all changes of reference frame $$x\to x'$$, it follows that $$c^2t'^2 - x'^2 = 0$$ as well. Using natural units, more generally this implies that any changes of an intertial reference frame $$(t,x, y, z) \to (t', x', y', z')$$ must preserve the equality 
+
+$$
+t^2 - x^2 - y^2 - z^2 = t'^2 - x'^2 -y'^2 - z'^2
+$$ 
+
+which as an invariant (squared) norm gives what's known as the Minkowski metric. Any transformation respecting this metric is a symmetry of relativistic physics, and the group of all these symmetry preserving transformations is known as the Lorentz Group. From here on out, for a four vector $$x^\mu = (t,x, y, z)$$ we take $$x^\mu x_\mu = t^2 - x^2-y^2-z^2$$ to be its squared norm under this metric.
+
+
+## Symmetries
+
+Now that we have an equation which enables us to identify if a transformation is a symmetry, we want to be able to classify them. First, note that for a 3D rotation acting on the $$x,y,z$$ components, given by a matrix $$R$$ satisfying $$RR^T = I$$, we can easily see that 
+
+$$
+(Rx)^\mu (Rx)_\mu = t^2 - \vert\vert(Rx)_i\vert\vert_2^2 = t^2 - x^2 - y^2 - z^2 = x^\mu x_\mu
+$$
+
+preserves the metric and is thus a symmetry as rotations preserve the Euclidean norm. By a similar process, you can try convincing yourself that time reversal and space inversion also qualify as symmetries. Next, we want to understand how coordinates should transform over shifts in velocity. To do this, consider coordinates $$x^+ = t+x$$ and $$x^- = t-x$$ (leaving the other components constant). Then by construction $$(x^+)(x^-)$$ is invariant. An obvious invariant preserving transformation is to then take $$x'^+ = \lambda x^+$$ for some constant $$\lambda$$ and $$x'^- = \frac{1}{\lambda}x^-$$ such that $$(x^+)(x^-) = (x'^+)(x'^-)$$. Explicitly expanding out and solving for $$x' = \frac{\lambda}{2}x^+ - \frac{1}{2\lambda}x^-$$ in terms of $$(t,x)$$ and similarly for $$t'$$, we find that 
+
+$$
+\begin{align*}
+    x' &= \frac{\lambda^2 +1}{2\lambda}x + \frac{\lambda^2-1}{2\lambda}t \\
+    t' &= \frac{\lambda^2-1}{2\lambda}x + \frac{\lambda^2+1}{2\lambda}t
+\end{align*}
+$$
+
+
+In particular, choosing a frame with $$x'=0$$ implies that $$x = \frac{1-\lambda^2}{1+\lambda^2}t$$ and thus $$ x = vt$$ with $$v = \frac{1-\lambda^2}{1+\lambda^2}$$. Using this definition of $$v$$ and plugging in to solve for $$(t', x')$$, it becomes apparent that 
+
+$$
+\begin{align*}
+t' &= \frac{t-vx}{\sqrt{1-v^2}} &= \gamma(t - vx) \\
+x' &= \frac{x -vt}{\sqrt{1-v^2}} &= \gamma(x-vt) \\
+y' &= y \\
+z' &= z
+\end{align*}
+$$
+
+where we adopt the standard notation for the Lorentz Factor $$\gamma = \frac{1}{\sqrt{1-v^2}}$$. The derived equation is often called the Lorentz Boost applied along the $$x$$-axis and intuitively corresponds to shifting to another reference frame with a constant velocity $$v$$. To boost along an arbitrary axis $$w$$, one simply rotates $$w$$ to the $$x$$-axis, applies the standard Lorentz Boost, and rotates the frame back. Although I won't show it here, every element of the the Lorentz Group can be broken down into some composition of rotations, boosts, time reversal, and spatial inversion. These completely describe the symmetry transformations of the Minkowski Space special relativity resides in.
+
+
+
+## Paradoxes
+
+For some fun, I'll show a couple principles underlying some classic "paradoxes" you may have seen before. First, we illustrate the effects of Lorentz Contraction. Consider a pole of length $$L$$ sitting still at the origin along the $$x$$-axis in the $$(t, x)$$ frame. Now consider a frame $$(t', x')$$ constructed by applying a boost of velocity $$v$$. At $$t'=0$$, by the Lorentz Boost formulas we know that $$t = vx$$, and so at the tip of the pole where $$x=L$$ we find that $$t=vL$$. Now, applying the invariance of norm, we see that 
+
+$$
+\begin{align*}
+x'^2 - t'^2 &= x^2 - t^2 \\
+x'^2 &= L^2 - v^2L^2 \\
+x' &= L\sqrt{1 - v^2} = \frac{L}{\gamma}
+\end{align*}
+$$
+
+and thus the length of the pole in the moving $$(t', x')$$ frame actually _decreases_ by a factor of $$\frac{1}{\gamma}$$.
+
+
+Next, to illustrate time dilation we consider the same setting, but now note what happens at $$x'= 0$$. Plugging into our equations from teh Lorentz Boost, we see that this directly implies $$x = vt$$, and thus applying invariance of the norm again:
+
+$$
+\begin{align*}
+t'^2 - x'^2 &= t^2 - x^2 \\
+t'^2 &= t^2 - v^2t^2 \\
+t' &= t\sqrt{1-v^2} = \frac{t}{\gamma}
+\end{align*}
+$$
+
+which shows that clocks in this moving frame actually appear to be running slower by a factor of $$\frac{1}{\gamma}$$ compared to the stationary frame. Together, these two concepts can be applied to show that simultaneity is not a universal concept, and that simultaneous events in one frame can appear time-separated in another. I highly encourage the ambitious reader to try deriving this themselves using these tools.
+
+
+## Proper Time and Action
+
+
+Proper time is an incredibly helpful concept and physically describes the amount of time an object experiences with respect to its own frame. For example, suppose that someone travels along a path from point $$a$$ to point $$b$$ with their own reference identified as $$(\tau, x')$$. At each instant, we can apply our good friend invariance of the norm, to see that $$d\tau^2 - dx'^idx'^i = dt^2 - dx^idx^i$$ for the travelling and stationary observer frames. However, for the traveller, in their frame of reference, they always have $$dx^i = 0$$ as their own position defines the origin of their frame. Thus, it follows that 
+
+$$d\tau = \sqrt{dt^2 - dx^i dx^i}$$
+
+To compute the total proper time over their journey, we can integrate, yielding
+
+$$
+\begin{align*}
+\tau_{a,b} &= \int_a^b d\tau \\
+&= \int_a^b \sqrt{dt^2 - dx^idx^i} \\
+&= \int_a^b dt\sqrt{1 - \frac{dx^i}{dt}\frac{dx^i}{dt}} \\
+&= \int_a^b \sqrt{1-v^2}dt
+\end{align*}
+$$
+
+Note how our derivation is actually independent of which path our friend takes as long as the endpoints are fixed, and thus our definition of proper time is actually a path invariant! From Lagrangian mechanics, you may recall the Principle of Least Action in which a quantity which is stationary to path variation is used to derive equations of motion. By inspection, our definition of proper time seems like a natural invariant to use to define such an action principle:
+
+$$
+\begin{align*}
+    S &= -m \tau_{a,b} \\
+    &= -m \int_a^b \sqrt{1-v^2}dt
+\end{align*}
+$$
+
+where we judiciously introduce a factor of $$-m$$ as the invariance of action is maintained under constant scaling.
+
+## Energy
+
+Now that we have an action, we're almost there. Recalling the definition of the Lagrangian from action, $$S = \int \mathcal{L}$$, we immediately can identify that here we have $$\mathcal{L} = -m \sqrt{1 - v^2}$$. As this may still look unfamiliar, we can reintroduce units using the fact that $$\mathcal{L}$$ has units of energy, to see that 
+
+$$
+\mathcal{L} = -mc^2\sqrt{1 - \frac{v^2}{c^2}}
+$$
+
+Taking a first order Taylor expansion and assuming that $$\frac{v}{c} << 1$$ in the classical mechanics regime, we see that
+
+$$
+\mathcal{L} \approx -mc^2(1 - \frac{v^2}{2c^2}) = -mc^2 + \frac{mv^2}{2}
+$$
+
+Now, taking the Legendre Transform to derive the Hamiltonian we see that 
+
+$$
+\mathcal{H} = mc^2 + \frac{mv^2}{2}
+$$
+
+This should look familiar! The Hamiltonian $$\mathcal{H}$$ represents the energy of a system, and what we've now derived consists of a classical kinematic energy term $$\frac{mv^2}{2}$$ and a constant factor $$mc^2$$. Setting $$v = 0$$, we see that $$ E = mc^2$$ is the resting energy of our system and is exactly the celebrated mass-energy equivalence formula Einstein derived a century ago!
+
+
+
+#### Remarks
+
+I hope you were able to enjoy reading this and found it at least somewhat insightful! If you're interested in these sorts of things, the book [Spacetime Physics](https://www.eftaylor.com/special.html) by Taylor and Wheeler is a classic and has plenty of fun paradox brainteasers to play around with.
