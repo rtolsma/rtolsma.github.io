@@ -32,3 +32,5 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 gem "kramdown", ">=2.3.1"
 gem "nokogiri", ">= 1.11.0"
 
+
+gem "webrick", "~> 1.8"

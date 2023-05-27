@@ -35,24 +35,25 @@ Now, taking $$\Omega$$ to be something a little more tricky like the Mobius Stri
 
 ## 2. Universal Rotational Symmetry
 
-Some of the coolest results in quantum mechanics are from improving our understanding of the fundamental symmetries we find in our universe. One completely surprising discovery (for myself!), is that our world is not actually $$360^\circ$$ symmetric. 
+Some of the coolest results in quantum mechanics are from improving our understanding of the fundamental symmetries we find in our universe. One completely surprising discovery (for myself!), is that our world is not actually $$2\pi$$ symmetric. 
 
 Fundamentally, when we zoom in at the particle level, there are two forms of angular momentum: standard angular momentum, and spin angular momentum. A rather famous result in quantum mechanics proves two particulary interesting properties of spin momentum: 
 
-(1) the values of spin are discrete taking on non-negative integer and half-integer values i.e $$0, \frac{1}{2}, 1, \frac{3}{2},\ldots$$
 
-(2) particles with integral spin known as bosons have symmetric wavefunctions, while particles with half-integer spins are known as fermions and maintain antisymmetric wavefunctions under parity. 
+1. The values of spin are discrete taking on non-negative integer and half-integer values i.e $$0, \frac{1}{2}, 1, \frac{3}{2},\ldots$$
+
+2. Particles with integral spin known as bosons have symmetric wavefunctions, while particles with half-integer spins are known as fermions and maintain antisymmetric wavefunctions under parity. 
 
 
 
-Now, for the fun part, we want to understand how particles are affected when we rotate space. From classical mechanics, we know that standard angular momentum transforms under a rotation by simply rotating its own axis along with the rest of the transformation, so when we spin space around by $$360^\circ$$, the momentum remains unchanged. However, in the case of a Fermion, as a consequence of its antisymmetric properties, the wavefunction actually incurs a negative sign after a $$360^\circ$$ rotation. Therefore, we _actually_ need a $$720^\circ$$ degree rotation in order for both forms of momentum to remain invariant! This is really non-intuitive result, our world is not $$360^\circ$$ symmetric! Why do we not see these changes in our everyday life? It turns out, that the scale of the energies at which spin interacts is on the order of $$\hbar$$, which is extremely small in comparison to typical forces we see in our daily lives.
+Now, for the fun part, we want to understand how particles are affected when we rotate space. From classical mechanics, we know that standard angular momentum transforms under a rotation by simply rotating its own axis along with the rest of the transformation, so when we spin space around by $$2\pi$$, the momentum remains unchanged. However, in the case of a Fermion, as a consequence of its antisymmetric properties, the wavefunction actually incurs a negative sign after a $$2\pi$$ rotation. Therefore, we _actually_ need a $$4\pi$$ degree rotation in order for both forms of momentum to remain invariant! This is really non-intuitive result, our world is not $$2\pi$$ symmetric! Why do we not see these changes in our everyday life? It turns out, that the scale of the energies at which spin interacts is on the order of $$\hbar$$, which is extremely small in comparison to typical forces we see in our daily lives.
 
 
 ### Topological Explanation
 
 The real reason these things happen has to do with the different symmetry groups representing bosons and fermions.
 
-Recall that every 3D rotation of space can be described by a $$3\times 3$$ orthogonal matrix with positive determinant. In mathematics, we usually denote these sets of matrices by the term $$SO(3)$$ (the special orthogonal 3D matrices). However, we can also visualize each rotation as being given by its oriented axis of rotation which in turn (by just visualizing where the arrow reaches) can be identified with a point on a sphere. Hence, $$SO(3)$$ is a just a sphere! It turns out, using the physical intuition described previously, angular momentum operators can be exactly represented under the symmetries of $$SO(3)$$. Using some detailed expansions, one finds that the operators for angular spin are actually given by the symmetries of $$SU(2)$$ (the special unitary matrices in 2D), which is a double cover of the sphere (think of wrapping paper around a sphere twice). Thus, a $$360^\circ$$ rotation in $$SU(2)$$ corresponds to traversing the first cover, and thus $$720^\circ$$ is required to loop around both covers to reach the starting point. Similar interesting symmetries arise when examining other particles in QFT from examining their Lie respective group representations.
+Recall that every 3D rotation of space can be described by a $$3\times 3$$ orthogonal matrix with positive determinant. In mathematics, we usually denote these sets of matrices by the term $$SO(3)$$ (the special orthogonal 3D matrices). However, we can also visualize each rotation as being given by its oriented axis of rotation which in turn (by just visualizing where the arrow reaches) can be identified with a point on a sphere. Hence, $$SO(3)$$ is a just a sphere! It turns out, using the physical intuition described previously, angular momentum operators can be exactly represented under the symmetries of $$SO(3)$$. Using some detailed expansions, one finds that the operators for angular spin are actually given by the symmetries of $$SU(2)$$ (the special unitary matrices in 2D), which is a double cover of the sphere (think of wrapping paper around a sphere twice). Thus, a $$2\pi$$ rotation in $$SU(2)$$ corresponds to traversing the first cover, and thus $$4\pi$$ is required to loop around both covers to reach the starting point. Similar interesting symmetries arise when examining other particles in QFT from examining their Lie respective group representations.
 
 
 #### Footnotes
