@@ -70,7 +70,7 @@ $$i\hbar \frac{d}{dt}\vert \varphi(0) \rangle = H\vert \varphi(0)\rangle$$
 
 Applying the exact same process more generally, we ultimately discover that
 
-$$i\hbar \frac{d}{dt}\vert \varphi(t)\langle = H(t) \vert \varphi(t)\rangle $$ for $$H(t) = i\hbar U'(t)$$
+$$i\hbar \frac{d}{dt}\vert \varphi(t)\rangle = H(t) \vert \varphi(t)\rangle $$ for $$H(t) = i\hbar U'(t)$$
 
 Now this here is Schrodinger's complete equation in all its glory. A simple elegant formula describing how our reality continuously evolves.
 
