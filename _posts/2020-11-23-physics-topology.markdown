@@ -13,9 +13,11 @@ Within my broad interests in mathematics, topology is near and dear to my heart 
 
 Our first fun fact belongs to the category of Electricity and Magnetism, a subject in which topology is ubiquitious. The hallmark of classical E&M, Maxwell's equations, which in standard vector calculus notation are given as 
 
-\[
+$$
+\begin{align*}
 \nabla\cdot E = \frac{\rho}{\epsilon_0} \quad \nabla\cdot B = 0 \quad \nabla\times E = -\frac{\partial B}{\partial t} \quad \nabla\times B = \mu_0\left(J + \epsilon_0\frac{\partial E}{\partial t}\right)
-\]
+\end{align*}
+$$
 
 
  actually possess a very fundamental connection and expression within the language of [differential forms](https://en.wikipedia.org/wiki/Differential_form). For those unfamiliar, differential forms are effectively the natural generalization of your standard derivatives to those that work on generic smooth manifolds, and form the basic building blocks of differential geometry. While the theory of differential forms is rather deep, for the purposes of this article, it's at most useful to know that the these forms, when utilized on a given manifold, exhibit some nice structures that directly convey information about the topological structure of the manifold[^1].
@@ -24,9 +26,11 @@ Our first fun fact belongs to the category of Electricity and Magnetism, a subje
 
 In an introductory E&M class, you learn that along a boundary of a surface with positive current flow, an induced magentic flux perpendicular to the loop will appear. This known as Faraday's Law, and within Maxwell's equations appears in the form of 
 
-\[
+$$
+\begin{align*}
 \int_{\partial \Omega} E\cdot dl = -\frac{\partial}{\partial t}\int_\Omega B\cdot dA
-\]
+\end{align*}
+$$
 
 where the left hand side represents our integral around the boundary of our surface (forming the circuit), and the right hand represents the time varying magnetic flux through the space enclosed. This makes a lot of sense if your surface is easy to assign directions to, like a closed copper circuit loop.
 
