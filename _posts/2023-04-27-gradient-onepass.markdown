@@ -23,7 +23,7 @@ $$
 \end{align*}
 $$
 
-For sufficiently small $h$, this shows a simple single $$f$$ evaluation can be utilized to obtain the derivative at a point. Conveniently, `numpy` and many other
+For sufficiently small $$h$$, this shows a simple single $$f$$ evaluation can be utilized to obtain the derivative at a point. Conveniently, `numpy` and many other
 numerical Python libraries support complex number types with overridden functionality, meaning this trick can often work without any requiring any additional
 code changes. Unfortunately, it's not very numerically stable due to the dependence on $$\frac{1}{h}$$, but it's still neat nonetheless.
 
