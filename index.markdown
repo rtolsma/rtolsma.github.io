@@ -5,4 +5,4 @@
 layout: home
 ---
 
-Welcome to my blog! Here you will find posts centered on problems I've been thinking about, beautiful mathematical machinery, and random musings.
+Welcome to my blog! Here you will find posts centered on problems I've been thinking about, reflections, fun technical machinery, and random musings.
