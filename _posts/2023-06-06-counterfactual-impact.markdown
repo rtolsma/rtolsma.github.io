@@ -6,7 +6,7 @@ comments: true
 published: true 
 ---
 
-You're a bright young kid striving to change the world. As a pure bred rationalist, you of course seek to maximize our counterfactual altruistic impact, but in practice, what does that mean?
+You're a bright young kid striving to change the world. As a pure bred rationalist, you of course seek to maximize your counterfactual altruistic impact, but in practice, what does that mean?
 
 I'll attempt to convince you, based on a simplified mathematical model, that seeking counterfactual impact implies prioritizing fields which have opportunities for heavy-tailed contributions regardless of the talent distribution.
 
@@ -32,7 +32,7 @@ When is this value large?
 
 Well, if the distribution $$\mathcal{D}$$ has a heavy left tail, then the difference between the average and minimum values will be large, and so the counterfactual impact will be large. But, generally speaking, impact is a non-negative quantity, so the counterfactual impact here is upper bounded by $$\mathbb{E}[X_{N+1}]$$, which naively represents a maximum relative change of $$\frac{1}{N}$$ percent to the field! 
 
-For any significantly sized field, this implies that your counterfactual impact is negligible if you don't expect to significantly outperform the average.
+For any significantly sized field, this implies that your _relative_ counterfactual impact is negligible if you don't expect to significantly outperform the average. For many, relative impact is also a proxy for how much pride and value you can derive from your work, so this is a fairly pretty depressing result when the peer group is $$F$$ itself.
 
 # Being the Best
 
@@ -91,7 +91,7 @@ I &= \mathbb{E}[ \max(X_1, \ldots, X_{N+1}) - \min(X_1,\ldots, X_{N+1})] \\
 $$
 
 
-Surprisingly, even for the Pareto Distribution we see that for $$ N \geq \frac{\alpha}{\alpha-1}$$ that it becomes _better_ for us to choose fields with larger $$N$$ in terms of relative impact! Notably, for most reasonable values of $$\alpha$$ this phase transition begins at reasonably low values of $$N$$.
+Surprisingly, even for the Pareto Distribution we see that for $$ N \geq \frac{\alpha}{\alpha-1}$$ that it becomes _better_ for us to choose fields with larger $$N$$ in terms of relative impact! Notably, for most reasonable values of $$\alpha$$ this phase transition begins at surprisingly low values of $$N$$.
 
 
 # Being the z-th Percentile
@@ -114,7 +114,7 @@ $$
 \begin{align*}
 \frac{1}{(1-z)^\alpha} - N^\alpha  &> \frac{\alpha}{\alpha-1} \\
 \implies z &> 1 - \left( \frac{1}{N^\alpha + \frac{\alpha}{\alpha - 1}} \right)^\frac{1}{\alpha} \\
-&> 1 - \frac{1}{N}
+&> 1 - \frac{1}{N} \quad \text{ for } \alpha > 1
 \end{align*}
 $$
 
@@ -124,9 +124,9 @@ which effectively equates to being the best in the field. This has the surprisin
 
 # Conclusion
 
-These are pretty simplified models, but still further advance my intuition towards seeking tail upside opportunities (confirmation bias, possibly?) to maximize net impact, unless my goal is to feel good about myself in my local context. Reality is, however, that most of the time, tail opportunities aren't particularly accessible to any given individual and aren't nearly as random, and so these insights should be taken with a grain of salt. 
+These are pretty simplified models, but still further advance my intuition towards seeking tail upside opportunities (confirmation bias, possibly?) to maximize net impact, and pursuing less competitive, smaller contexts to maximize relative impact. Reality is, however, that most of the time, tail opportunities and performance aren't particularly accessible to most and aren't nearly as random as I'd like, and so these insights should be taken with a grain of salt. 
 
-Some realistic extensions to look into later on include sampling $$K$$ people applying to join field $$F$$ and only choosing the top $$N$$, introducing multiple competitive fields to choose from, and adding uncertainty to your own performance estimates.
+In the future, some simple extensions of this model to that would be fun to look into include: sampling $$K$$ people applying to join field $$F$$ and only choosing the top $$N$$, introducing multiple competitive fields to choose from, and adding uncertainty to your own performance estimates.
 
 
 #### Footnotes
