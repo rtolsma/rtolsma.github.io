@@ -6,10 +6,10 @@ comments: true
 published: true 
 ---
 
-It's now been almost two years since graduating from Stanford, and I wanted to carve out a post to reflect deeply on how well I spent my time there, now with the benefit of hindsight, and with the additional goal of informing my future self to bias towards activities that matter longer term. Measuring quality of time is a multi-dimensional task, but the core aspects that I've grown to appreciate can be broadly categorized within social life, health, career, and academics[^1].
+It's now been almost two years since graduating from Stanford, and I wanted to carve out a post to reflect deeply on how well I spent my time there, now with the benefit of hindsight, and with the additional goal of informing my future self to bias towards activities that matter longer term. There a variety of ways to measure quality of time, but the core aspects that I've grown to appreciate can be broadly categorized within: social life, health, career, and academics[^1].
 
 
-Since at any given time, I found myself split between these categories simultaneously, I'll present a quarter by quarter rating of each with some brief commentary and use (\*) to highlight particularly high quality experiences or activities. 
+Since at any given time, I found myself optimizing between these categories simultaneously, I'll present a quarter by quarter rating of each with some brief commentary and use (\*) to highlight particularly high quality experiences or activities. 
 
 
 
@@ -29,9 +29,10 @@ Adjusting to Stanford was fairly difficult my first quarter. As a natural introv
 
 **Highlights**:
 - Despite mostly restricting social life to my dorm, I've met many of my closest lifetime friends there
+- Engaging philosophical discussions with dormmates which helped solidify awareness of my own lack of understanding and consistency
 
 **Mistakes**:
-- Not taking the standard math/physics courses to meet other freshman
+- Not taking the standard Math/Physics courses to meet other freshman
 - Not joining non pre-professional clubs (like sports, etc.) to meet friends
 - Not finding a consistent fun physical activity to engage with people in (does Ping Pong count?)
 
@@ -53,7 +54,7 @@ Adjusting to Stanford was fairly difficult my first quarter. As a natural introv
 
 **Highlights**:
 - My friendships within the dorm community expanded and deepened significantly
-- Taking Math 62CM, significantly developed my mathematical reasoning skills, and also introduced me to a lot of friends from the math community
+- Taking Math 62CM, significantly developed my abstract reasoning skills, and also introduced me to a lot of friends from the Math major community
 
 **Mistakes**:
 - Didn't touch grass enough (a recurring mistake throughout most of my collegiate experience) 
@@ -74,12 +75,12 @@ One of my goals throughout freshman year was to find my intellectual/productive 
 
 
 **Highlights**:
-- Deepened relations with close friends in the math and cs community, and finally met the honors physics kids in Physics 65 which was nice
+- Deepened relations with close friends in the Math and CS communities, and finally met the Physics kids in the honors sequence which was nice
 - Found my academic limits, learned a ton of cool material, and drank the firehose of knowledge with the highest density of intellectually fun classes I've taken at Stanford
-- Realized pretty clearly, that being a great theory PhD in Math was out of the question -- the classmates in my twelve student topology course somehow self-selected quite strong that quarter, to the point where I felt talent-wise near the bottom quartile of the class. This was a great wake-up call looking back (at the time, was quite upset), as it really helped me bias towards more realistic paths
+- Realized pretty clearly, that being a great theory PhD in Math was out of the question -- the classmates in my twelve student Differential Topology course somehow self-selected quite strong that quarter, to the point where I felt talent-wise near the bottom quartile of the class. This was a great wake-up call looking back (at the time, was quite upset), as it really helped me bias towards more realistic paths
 
 **Mistakes**:
-- Didn't touch grass enough or see the sun in beautiful spring weather
+- Didn't touch grass enough or see the sun in beautiful Spring weather
 - Didn't give myself enough free time to relax and reflect which had mental health tolls
 
 # Summer 2018
@@ -245,9 +246,9 @@ The first 8 weeks were pre-covid, and consisted of a lot of fun continuation of 
 
 **Internship**: Wealthfront\*
 
-**Research** : RL Research with Dorsa
+**Research** : RL Research with Dorsa\*
 
-Realizing Covid was going to crush any hope of an on-campus experience, I hunkered down and decided to go pretty hard on my work. In hindsight, I really should have taken it easier as I was not in a great mental state (along with everyone else isolated during covid), and really owe it to my family for helping support.
+Realizing Covid was going to crush any hope of an on-campus experience, I hunkered down and decided to go pretty hard on my work. In hindsight, I really should have taken it easier as I was not in a great mental state (along with everyone else isolated during covid), and really owe it to my family for helping support me throughout.
 
 Luckily, I finally hit the jackpot in terms of mentorship, and my intern manager at Wealthfront was phenomenal despite the pandemic disruptions, and had a really engaging, cool project. Likewise, for my second attempt at academic research I joined a new project in Dorsa's lab focused on pure RL, and this time I prioritized mentorship and a good team which dramatically improved my experience and output.
 
@@ -272,7 +273,7 @@ Luckily, I finally hit the jackpot in terms of mentorship, and my intern manager
 
 **Internship**: QuantCo
 
-**Research**: Continued RL Research with Dorsa
+**Research**: Continued RL Research with Dorsa\*
 
 In summer, I prioritized hanging out (socially distanced) with friends, or in organized online gatherings with some consistency. Remote internship ended up being not very time intensive, which I took advantage of to spend more time with research and playing outside.
 
@@ -319,10 +320,10 @@ Lived with some friends in a house during a virtual quarter to try and make the 
 
 **Coursework** (24): Math 236, Physics 220, Physics 113, EE 276\*, CS 228, Applied Physics 228, Music 19A
 
-Continued living mostly with the same group plus some other friends in a safer, cheaper location out of state where we could afford a bigger place. Hung out and went outside to hike and eat out more as quarantine restrictions relaxed slowly which drastically improved quality of life. Because I was feeling pretty lethargic from all of my video games and free time in fall, I decided to go a bit harder on coursework -- this backfired halfway through the quarter, as I got really pulled into the whole GME saga and ended up spending a majority of my time learning about finance, staring at flashy charts, reading options theory and textbooks, and other dumb things (classic "Ryan is a sheeple" example).
+Continued living mostly with the same group plus some other friends in a safer, cheaper location out of state where we could afford a bigger place. Hung out and went outside to hike and eat out more as quarantine restrictions relaxed slowly which drastically improved quality of life. Because I was feeling pretty lethargic from all of my video games and free time in Fall, I decided to go a bit harder on coursework -- this backfired halfway through the quarter, as I got really pulled into the whole GME saga and ended up spending a majority of my time learning about finance, staring at flashy charts, reading options theory and textbooks, and other dumb things (classic "Ryan is a sheeple" example).
 
 **Highlights**:
-- Got much closer with my housemates through engaging outdoor activities and shared interests compared with my fall experience. Learned to barely cook, which was fun
+- Got much closer with my housemates through engaging outdoor activities and shared interests compared with my Fall experience. Learned to barely cook, which was fun
 - Settled on QR at Vatic Labs as my post-graduation job
 - I had never actually prioritized grades in my academics, and instead prioritized marginal value per effort and breadth/exploration for understanding my interests (my life is often characterized as fleeing from boredom/ennui). Knowing that this would likely be my last rigorous quarter at Stanford, I challenged myself to get as high of a GPA as I could for the quarter which I was proud to semi-succeed at
 
@@ -344,7 +345,7 @@ Senior Spring was my victory lap quarter with school finally brought back on cam
 
 
 **Highlights**:
-- I _really really_ loved playing Spikeball with friends, and for 1-2 hours on average _every_ day was my go-to social activity throughout the perfect spring weather. I also scheduled daily meals and hangouts with everyone I possibly could that remained on campus
+- I _really really_ loved playing Spikeball with friends, and for 1-2 hours on average _every_ day was my go-to social activity throughout the perfect Spring weather. I also scheduled daily meals and hangouts with everyone I possibly could that remained on campus
 - Started a habit of taking photos and videos of fun activities in the moment, with the goal of just saving to view for later (I don't post on social media much). The photos and videos from Senior Spring are things I still view and enjoy, and I've kept this up post-grad as one of my favorite ongoing habits
 
 **Mistakes**:
@@ -354,13 +355,13 @@ Senior Spring was my victory lap quarter with school finally brought back on cam
 # Conclusions
 {: .bigh}
 
-After writing and reflecting on the above, I think it's pretty clear to me that there are certain patterns that have upheld in terms of improving health and happiness. Some obvious ones are frequency of social interaction, quality and intellectual engagement of academic course loads, and solid teams and mentorship to work with. Some which seem obvious now, but clearly were not in retrospect, are quantity of time outdoors and consistency of physical activity. Clearly, I was hanging out with friends and playing games quite a bit, but why didn't I do those _outside_? Smh. 
+After writing and reflecting on the above, I think it's pretty clear to me that there are certain patterns that have held up in terms of improving health and happiness. Some obvious ones are the frequency of social interaction, the quality and intellectual engagement of academic course loads, and having solid teams and mentorship to work with.
 
-There are also some things I spent a lot of energy on, which given my current path, seem wasted, but wasn't quite so clear at the time. A solid few quarters spent on genomics research and learning computational approaches in biology/chemistry, which I'll likely never use. But, these types of things I suppose, are only clear in hindsight. Between my FB internship and genomics research, I realize that quitting was certainly the right move, but in the future it might be better to bias _further_ towards quitting earlier[^3]. Likewise, I realize now, that classes/internships which I expected to be jokes in advance...usually were in fact wastes of time (surprising, right?). And the only thing I got out of it was deceiving myself unfortunately. Finally, I recognize now that herd mentality and paths of least resistance are more of a force in my life than I originally thought, and I should actively try to combat these biases in how I spend my currently allocate time and in my plans for the future.
+Some that seem obvious now but clearly were not in retrospect include the quantity of time spent outdoors and the consistency of physical activity. Clearly, I was hanging out with friends and playing games quite a bit, but why didn't I do those activities _outside_? Smh.
 
+There are also some things I spent a lot of energy on that, given my current path, seem wasted, but weren't quite so clear at the time. I spent a solid few quarters on genomics research and learning computational approaches in biology/chemistry, which I'll likely never use. But, these types of things, I suppose, are only clear in hindsight. Between my FB internship and genomics research, I realize that quitting was certainly the right move, but in the future, it might be better to bias even more towards quitting earlier[^3]. Likewise, I now realize that classes/internships which I expected to be fluff in advance... usually were, in fact, wastes of time (surprising, right?). And the only thing I got out of it was deceiving myself, unfortunately. Finally, recognizing now that herd mentality and paths of least resistance are more of a force in my life than I originally thought, and that I should actively try to combat these biases in how I currently allocate my time and in my plans for the future.
 
-
-Taking this time to write down thoughts and self-reflect in itself has been quite rewarding, and I hope anyone who reads this may find it as insightful for themselves on approaches to replicate or avoid as I have.
+Taking this time to write down thoughts and self-reflect in itself has been quite rewarding, and I hope anyone who reads this may find it as insightful for themselves in terms of approaches to replicate or avoid, as I have.
 
 
 

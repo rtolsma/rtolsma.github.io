@@ -62,4 +62,4 @@ Recall that every 3D rotation of space can be described by a $$3\times 3$$ ortho
 
 #### Footnotes
 
-[^1] For the inclined, see [De Rham Cohomology](https://en.wikipedia.org/wiki/De_Rham_cohomology)
+[^1]: For the inclined, see [De Rham Cohomology](https://en.wikipedia.org/wiki/De_Rham_cohomology)
