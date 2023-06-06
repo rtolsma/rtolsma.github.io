@@ -124,7 +124,9 @@ which effectively equates to being the best in the field. This has the surprisin
 
 # Conclusion
 
-These are pretty simplified models, but still further advance my intuition towards seeking tail upside opportunities (confirmation bias, possibly?). Reality is, however, that most of the time, tail events aren't particularly accessible to any given individual. Realistic extensions would probably include sampling $$K$$ people applying to join field $$F$$ and only choosing the top $$N$$, and introducing multiple competitive fields to choose from -- both of which likely further compress the relative impact bounds.
+These are pretty simplified models, but still further advance my intuition towards seeking tail upside opportunities (confirmation bias, possibly?) to maximize net impact, unless my goal is to feel good about myself in my local context. Reality is, however, that most of the time, tail opportunities aren't particularly accessible to any given individual and aren't nearly as random, and so these insights should be taken with a grain of salt. 
+
+Some realistic extensions to look into later on include sampling $$K$$ people applying to join field $$F$$ and only choosing the top $$N$$, introducing multiple competitive fields to choose from, and adding uncertainty to your own performance estimates.
 
 
 #### Footnotes
