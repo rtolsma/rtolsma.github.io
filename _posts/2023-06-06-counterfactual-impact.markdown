@@ -18,7 +18,7 @@ Let's start with a simple model of the world. For a given altruistic field $$F$$
 Let $$X_1, \ldots, X_N \stackrel{\text{i.i.d}}{\sim} \mathcal{D}$$ represent the impact of the $$N$$ contributors to $$F$$, and being humble for now, we assume that in expectation we're identical to everyone else throwing their hat in the ring, letting $$X_{N+1}\sim \mathcal{D}$$ represent our own impact. What is the counterfactual impact in this scenario?
 
 
-Well, taking the difference between the worlds where do and don't contribute, we see that the counterfactual impact $$I$$ is expressed as:
+Well, taking the difference between the worlds where you do and don't contribute, we see that the counterfactual impact $$I$$ is expressed as:
 
 $$
 \begin{align*}
