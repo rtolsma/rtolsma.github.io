@@ -6,7 +6,7 @@ comments: true
 published: true 
 ---
 
-It's now been almost two years since graduating from Stanford, and I wanted to carve out a post to reflect deeply on how well I spent my time there, now with the benefit of hindsight, and with the additional goal of informing my future self to bias towards activities that matter longer term. There's a variety of ways measure quality of time, but the main aspects that I've grown to appreciate can be broadly categorized within social life, health, career, and academics[^1].
+It's now been almost two years since graduating from Stanford, and I wanted to carve out a post to reflect deeply on how well I spent my time there, now with the benefit of hindsight, and with the additional goal of informing my future self to bias towards activities that matter longer term. Measuring quality of time is a multi-dimensional task, but the core aspects that I've grown to appreciate can be broadly categorized within social life, health, career, and academics[^1].
 
 
 Since at any given time, I found myself split between these categories simultaneously, I'll present a quarter by quarter rating of each with some brief commentary and use (\*) to highlight particularly high quality experiences or activities. 
@@ -23,7 +23,7 @@ Since at any given time, I found myself split between these categories simultane
 
 **Coursework** (20): Econ 1, CS 106X, Math 113\*, Freshman Writing Seminar (ESF)
 
-Adjusting to Stanford was fairly difficulty my first quarter. As a natural introvert and lifetime cynic, finding social groups outside of dorm activities or in clubs was fairly difficult. 
+Adjusting to Stanford was fairly difficult my first quarter. As a natural introvert and lifetime cynic, finding social groups outside of dorm activities or in clubs was tough, and I ended up having large blocks of free time by myself which was undesirable. 
 
 
 
@@ -133,14 +133,14 @@ Another fairly academic quarter, where I tried to bias more towards applied subj
 
 **Coursework** (15): Math 121, Physics 230\*, EE 364A\*, CS 255, ENGLISH 146A
 
-After realizing health the past Fall/Spring was worse, I tried to take a lighter course load. This proved to be a great decision, and I enjoyed spending the free time socializing with my roommate and other friends. At this point, I also took some of that free time and joined my first club, Christian Intervarsity, where I met a lot of phenomenal people and friends I've still kept in touch with. Coincidentally, the courses I took ended up being very high quality, with Physics 230 being my favorite individual course at Stanford, and EE 364A being one of the most useful applied courses taken. 
+After realizing my health had suffered during the past Fall/Spring, I decided to take a lighter course load. This proved to be a great decision, and I enjoyed spending the free time socializing with my roommate and other friends. At this point, I also took some of that free time and joined my first club, Christian Intervarsity (IV), where I met a lot of phenomenal people and friends I've still kept in touch with. Coincidentally, the courses I took ended up being very high quality, with Physics 230 being my favorite individual course at Stanford, and EE 364A being one of the most useful applied courses taken. 
 
 
 
 **Highlights**:
 - Phenomenal teachers and interesting coursework
 - Backgammon, poker, fun reading, and board games with my social communities
-- Roommate and I secured quant internships in London together at the same firm (purposefully!). "Ryan is a sheeple", and I really only pursued quant since some smarter friends of mine were doing it and I wanted to be cool like them
+- Roommate and I secured quant internships in London together at the same firm (purposefully!). Another instance of "Ryan is a sheeple", as I really only pursued quant since some smarter friends of mine were doing it and I wanted to be cool like them
 
 **Mistakes**:
 - Not a significant amount of physical activity/grass touching  
@@ -164,8 +164,8 @@ This quarter had a ton of free time which I spent socializing and meeting new pe
 
 
 **Mistakes**:
-- Pretty much all of the classes outside of CS229 were bullshit, which I knew. After the easier Winter had me happier, I leaned a bit too far into the realm of BS'ing myself and stopped learning for the most part this quarter.
-- Did independent Research with Anshul Kundaje's lab (CS199), which was a terrible choice. I had never done research before, and without any mentorship or really solid genomics background, ended up mostly doing wasted work
+- Pretty much all of the classes outside of CS229 were bullshit, which I knew. After the easier Winter had me happier, I leaned a bit too far into the realm of fooling myself with useless classes and stopped learning for the most part this quarter.
+- Did independent Research with Anshul Kundaje's lab (CS199), which was a terrible choice (Anshul is great though). I had never done research before, and without any mentorship or really solid genomics background, ended up mostly doing wasted work
 
 
 
@@ -244,7 +244,8 @@ The first 8 weeks were pre-covid, and consisted of a lot of fun continuation of 
 **Coursework** (21): Math 228, EE 180\*, CS 110, CS 399, Music 25, German 101
 
 **Internship**: Wealthfront\*
-Research: RL Research with Dorsa
+
+**Research** : RL Research with Dorsa
 
 Realizing Covid was going to crush any hope of an on-campus experience, I hunkered down and decided to go pretty hard on my work. In hindsight, I really should have taken it easier as I was not in a great mental state (along with everyone else isolated during covid), and really owe it to my family for helping support.
 
@@ -270,7 +271,8 @@ Luckily, I finally hit the jackpot in terms of mentorship, and my intern manager
 - Academics/Career: 5/10
 
 **Internship**: QuantCo
-Research: RL Research with Dorsa
+
+**Research**: Continued RL Research with Dorsa
 
 In summer, I prioritized hanging out (socially distanced) with friends, or in organized online gatherings with some consistency. Remote internship ended up being not very time intensive, which I took advantage of to spend more time with research and playing outside.
 
@@ -352,9 +354,9 @@ Senior Spring was my victory lap quarter with school finally brought back on cam
 # Conclusions
 {: .bigh}
 
-After writing all these, I think it's pretty clear to me that there are certain patterns that have upheld in terms of improving health and happiness. Some obvious ones are frequency of social interaction, quality and intellectual engagement of academic course loads, and solid teams and mentorship to work with. Some which seem obvious now, but clearly were not in retrospect, are quantity of time outdoors and consistency of physical activity. Clearly, I was hanging out with friends and playing games quite a bit, but why didn't I do those _outside_? Smh. 
+After writing and reflecting on the above, I think it's pretty clear to me that there are certain patterns that have upheld in terms of improving health and happiness. Some obvious ones are frequency of social interaction, quality and intellectual engagement of academic course loads, and solid teams and mentorship to work with. Some which seem obvious now, but clearly were not in retrospect, are quantity of time outdoors and consistency of physical activity. Clearly, I was hanging out with friends and playing games quite a bit, but why didn't I do those _outside_? Smh. 
 
-There are also some things I spent a lot of energy on, which given my current path, seem wasted, but wasn't quite so clear at the time. A solid few quarters spent on genomics research and learning computational approaches in biology/chemistry, which I'll likely never use. But, these types of things I suppose, are only clear in hindsight. Between my FB internship and genomics research, I realize that quitting was certainly the right move, but in the future it might be better to bias _further_ towards quitting earlier[^3]. Likewise, I realize now, that classes/internships which I expected to be BS in advance...usually were in fact wastes of time (surprising, right?). And the only thing I got out of it was BS'ing myself unfortunately. Finally, I recognize now that herd mentality and paths of least resistance are more of a force in my life than I originally thought, and I should actively try to combat these biases in how I spend my currently allocate time and in my plans for the future.
+There are also some things I spent a lot of energy on, which given my current path, seem wasted, but wasn't quite so clear at the time. A solid few quarters spent on genomics research and learning computational approaches in biology/chemistry, which I'll likely never use. But, these types of things I suppose, are only clear in hindsight. Between my FB internship and genomics research, I realize that quitting was certainly the right move, but in the future it might be better to bias _further_ towards quitting earlier[^3]. Likewise, I realize now, that classes/internships which I expected to be jokes in advance...usually were in fact wastes of time (surprising, right?). And the only thing I got out of it was deceiving myself unfortunately. Finally, I recognize now that herd mentality and paths of least resistance are more of a force in my life than I originally thought, and I should actively try to combat these biases in how I spend my currently allocate time and in my plans for the future.
 
 
 

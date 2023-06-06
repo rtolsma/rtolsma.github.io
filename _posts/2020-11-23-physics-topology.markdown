@@ -11,7 +11,7 @@ Within my broad interests in mathematics, topology is near and dear to my heart 
 
 ### Mathematical Prelude
 
-Our first fun fact belongs to the category of Electricity and Magnetism, a subject in which topology is ubiquitious. The hallmark of classical E&M, Maxwell's equations, which in standard vector calculus notation are given as 
+Our first fun fact belongs to the category of Electricity and Magnetism, a subject in which topology is ubiquitous. The hallmark of classical E&M, Maxwell's equations, which in standard vector calculus notation are given as 
 
 $$
 \begin{align*}
@@ -24,7 +24,7 @@ $$
 
 ## Mobius Resistors
 
-In an introductory E&M class, you learn that along a boundary of a surface with positive current flow, an induced magentic flux perpendicular to the loop will appear. This known as Faraday's Law, and within Maxwell's equations appears in the form of 
+In an introductory E&M class, you learn that along a boundary of a surface with positive current flow, an induced magnetic flux perpendicular to the loop will appear. This known as Faraday's Law, and within Maxwell's equations appears in the form of 
 
 $$
 \begin{align*}
@@ -34,14 +34,14 @@ $$
 
 where the left hand side represents our integral around the boundary of our surface (forming the circuit), and the right hand represents the time varying magnetic flux through the space enclosed. This makes a lot of sense if your surface is easy to assign directions to, like a closed copper circuit loop.
 
-Now, taking $$\Omega$$ to be something a little more tricky like the Mobius Strip, we immediately run into an issue: the Mobius Strip is a non-orientable manifold, so how can we possible define a direction to integrate over on the right hand side? As a fun experiment, try taking a piece of paper and attaching opposite edges by applying a twist, and point upwards through the hole inside. If you can tell, as you trace along the boundary of your Mobius Strip, the relative directions of your upwards finger and the path you trace will change. It becomes clear now, that no matter what direction a magnetic field might be, there can be no net flux through the Mobius Strip! Thus, for an ideal mobius strip, in order for Faraday's Law to hold true, there can be no net current flow ever! This is a pretty remarkably valuable result, and is definitely one of the slickest topological tricks I've seen in physics. It turns out mathematically, this can be justified by more differential form theory, with which one can prove that integration is only defined on orientable manifolds.
+Now, taking $$\Omega$$ to be something a little more tricky like the Mobius Strip, we immediately run into an issue: the Mobius Strip is a non-orientable manifold, so how can we possible define a direction to integrate over on the right hand side? As a fun experiment, try taking a piece of paper and attaching opposite edges by applying a twist, and point upwards through the hole inside. If you can tell, as you trace along the boundary of your Mobius Strip, the relative directions of your upwards finger and the path you trace will change. It becomes clear now, that no matter what direction a magnetic field might be, there can be no net flux through the Mobius Strip! Thus, for an ideal Mobius strip, in order for Faraday's Law to hold true, there can be no net current flow ever! This is a pretty remarkably valuable result, and is definitely one of the slickest topological tricks I've seen in physics. It turns out mathematically, this can be justified by more differential form theory, with which one can prove that integration is only defined on orientable manifolds.
 
 
 ## 2. Universal Rotational Symmetry
 
 Some of the coolest results in quantum mechanics are from improving our understanding of the fundamental symmetries we find in our universe. One completely surprising discovery (for myself!), is that our world is not actually $$2\pi$$ symmetric. 
 
-Fundamentally, when we zoom in at the particle level, there are two forms of angular momentum: standard angular momentum, and spin angular momentum. A rather famous result in quantum mechanics proves two particulary interesting properties of spin momentum: 
+Fundamentally, when we zoom in at the particle level, there are two forms of angular momentum: standard angular momentum, and spin angular momentum. A rather famous result in quantum mechanics proves two particularly interesting properties of spin momentum: 
 
 
 1. The values of spin are discrete taking on non-negative integer and half-integer values i.e $$0, \frac{1}{2}, 1, \frac{3}{2},\ldots$$

@@ -12,7 +12,7 @@ In this post, I will attempt to derive and explain some consequences of special 
 
 ## Basics
 
-Consider a particle moving at the speed of light along the $$x$$-axis, such that $$ x = \pm ct$$ and the other coordinates are constant. Note that $$c^2t^2 -x^2=0$$. Since this must be invariant under all changes of reference frame $$x\to x'$$, it follows that $$c^2t'^2 - x'^2 = 0$$ as well. Using natural units, more generally this implies that any changes of an intertial reference frame $$(t,x, y, z) \to (t', x', y', z')$$ must preserve the equality 
+Consider a particle moving at the speed of light along the $$x$$-axis, such that $$ x = \pm ct$$ and the other coordinates are constant. Note that $$c^2t^2 -x^2=0$$. Since this must be invariant under all changes of reference frame $$x\to x'$$, it follows that $$c^2t'^2 - x'^2 = 0$$ as well. Using natural units, more generally this implies that any changes of an inertial reference frame $$(t,x, y, z) \to (t', x', y', z')$$ must preserve the equality 
 
 $$
 t^2 - x^2 - y^2 - z^2 = t'^2 - x'^2 -y'^2 - z'^2
@@ -85,7 +85,7 @@ which shows that clocks in this moving frame actually appear to be running slowe
 ## Proper Time and Action
 
 
-Proper time is an incredibly helpful concept and physically describes the amount of time an object experiences with respect to its own frame. For example, suppose that someone travels along a path from point $$a$$ to point $$b$$ with their own reference identified as $$(\tau, x')$$. At each instant, we can apply our good friend invariance of the norm, to see that $$d\tau^2 - dx'^idx'^i = dt^2 - dx^idx^i$$ for the travelling and stationary observer frames. However, for the traveller, in their frame of reference, they always have $$dx^i = 0$$ as their own position defines the origin of their frame. Thus, it follows that 
+Proper time is an incredibly helpful concept and physically describes the amount of time an object experiences with respect to its own frame. For example, suppose that someone travels along a path from point $$a$$ to point $$b$$ with their own reference identified as $$(\tau, x')$$. At each instant, we can apply our good friend invariance of the norm, to see that $$d\tau^2 - dx'^idx'^i = dt^2 - dx^idx^i$$ for the traveling and stationary observer frames. However, for the traveler, in their frame of reference, they always have $$dx^i = 0$$ as their own position defines the origin of their frame. Thus, it follows that 
 
 $$d\tau = \sqrt{dt^2 - dx^i dx^i}$$
 

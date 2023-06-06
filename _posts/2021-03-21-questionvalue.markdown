@@ -8,7 +8,7 @@ published: True
 
 
 
-This past quarter I was able to take a class at Stanford on [Information Theory](http://web.stanford.edu/class/ee276/outline.html) which had some really interesting material. While the class ended up not covering any significant applications to statistics or machine learning, I was able to glean some some small insights here and there after some contemplation. Below, I present in the form of an approachable gamified series of questions, a relatively interesting and intuitively insightful result at the intersection of statistics and information theory that I came across while musing around a couple days ago.
+This past quarter I was able to take a class at Stanford on [Information Theory](http://web.stanford.edu/class/ee276/outline.html) which had some really interesting material. While the class ended up not covering any significant applications to statistics or machine learning, I was able to glean some some small insights here and there after some contemplation. Below, I present in the form of an approachable gameified series of questions, a relatively interesting and intuitively insightful result at the intersection of statistics and information theory that I came across while musing around a couple days ago.
 
 
 ## Gambler's 20 Questions
