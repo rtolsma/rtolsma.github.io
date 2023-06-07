@@ -65,7 +65,7 @@ $$
 we see that it's actually better to choose fields with _larger_ $$N$$, where our assumption of being the best is stronger and utilized with greater effect.
 
 
-To help give some intuition, consider $$\mathcal{D}$$ explicitly as the Pareto Distribution[^1], which is widely used for modelling talent and real world output distributions, with parameter $$\alpha$$. For $$\alpha > 1$$ (required for finite mean), a quick lookup indicates that $$\mathbb{E}[X_i] \sim \mathcal{D}_\alpha = \frac{\alpha}{\alpha-1}$$ and the CDF and inverse CDF are given by
+To help give some intuition where this phase transition might apply, consider $$\mathcal{D}$$ explicitly as the Pareto Distribution[^1] with parameter $$\alpha$$, which is widely used for modelling talent and real world output distributions. For $$\alpha > 1$$ (required for finite mean), a quick lookup indicates that $$\mathbb{E}[X_i] \sim \mathcal{D}_\alpha = \frac{\alpha}{\alpha-1}$$ and the CDF and inverse CDF are given by
 
 
 $$
@@ -80,10 +80,10 @@ Now since we can view $$X_1,\ldots,X_{N+1}\sim \mathcal{D}_\alpha$$ as first sam
 
 $$
 \begin{align*}
-I &= \mathbb{E}[ \max(X_1, \ldots, X_{N+1}) - \min(X_1,\ldots, X_{N+1})] \\
-&= \mathbb{E}[ \max(F^{-1}(F(X_1)),\ldots, F^{-1}(F(X_{N+1}))) - \min( F^{-1}(F(X_1)),\ldots, F^{-1}(F(X_{N+1})))] \\
-&= \mathbb{E}[ F^{-1}(\max(F(X_1)),\ldots, F(X_{N+1})) - F^{-1}(\min( F(X_1),\ldots, F(X_{N+1})))] \\
-&\geq F^{-1}(\mathbb{E}[ \max(F(X_1)),\ldots, F(X_{N+1})])- F^{-1}(\mathbb{E}[\min( F(X_1),\ldots, F(X_{N+1}))]) \quad \text{ by Jensen's} \\
+I &= \mathbb{E}[ \max(X_1, \ldots, X_{N+1}) - \max(X_1,\ldots, X_{N})] \\
+&= \mathbb{E}[ \max(F^{-1}(F(X_1)),\ldots, F^{-1}(F(X_{N+1}))) - \max( F^{-1}(F(X_1)),\ldots, F^{-1}(F(X_{N})))] \\
+&= \mathbb{E}[ F^{-1}(\max(F(X_1)),\ldots, F(X_{N+1})) - F^{-1}(\max( F(X_1),\ldots, F(X_{N})))] \\
+&\geq F^{-1}(\mathbb{E}[ \max(F(X_1)),\ldots, F(X_{N+1})])- F^{-1}(\mathbb{E}[\max( F(X_1),\ldots, F(X_{N}))]) \quad \text{ by Jensen's} \\
 &= F^{-1}(1 - \frac{1}{N+1}) - F^{-1}(1 - \frac{1}{N}) \\
 &= (N+1)^\alpha - N^\alpha \\
 &> \alpha N
