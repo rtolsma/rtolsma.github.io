@@ -102,7 +102,7 @@ To start, note that this implies $$F(X_{N+1}) = z$$. Manipulating our previous r
 
 $$
 \begin{align*}
-I &= F^{-1}(z) - \mathbb{E}[ \min(X_1,\ldots, X_{N})] \\
+I &= F^{-1}(z) - \mathbb{E}[ \max(X_1,\ldots, X_{N})] \\
 &\geq \frac{1}{(1-z)^\alpha} - F^{-1}(1-\frac{1}{N}) \\
 &= \frac{1}{(1-z)^\alpha} - N^\alpha 
 \end{align*}
@@ -118,7 +118,7 @@ $$
 \end{align*}
 $$
 
-which effectively equates to being the best in the field. This has the surprising conclusion, that unless you really are going to be the best at what you do, the relative impact of your work will be maximized in smaller, less competitive fields.
+which effectively equates to being the best in the field. This has the surprising conclusion, that unless you really are going to be the best at what you do, the relative impact of your work will be maximized in smaller, less competitive fields, even for common heavy tailed distributions.
 
 
 
