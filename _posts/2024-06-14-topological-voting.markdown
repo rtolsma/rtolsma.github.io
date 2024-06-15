@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Topological Problems in Voting"
+categories: thoughts
+comments: true
+published: true
+---
+
+Back in college, I developed an interest in unexpected impossibility proofs applied to real world systems. The fact that certain abstract mathematical structures inherently have limitations which profoundly impact actual applications is both captivating and sobering. Here's a cute instance of topological properties applied to voting systems a friend shared with me.
+
+## Background: Arrow's Theorem
+
+Arrow's Theorem[^1] is the most famous impossibility theorem applied to voting systems -- lots of articles and papers have spent time introducing and discussing its implications. In essence, Arrow's Theorem states that a voting process which ranks candidates in should satisfy:
+
+1. Non-Dictatorship - no single voter dominates the output preferences
+
+2. Pareto Efficiency - if all voters rank candidate A over B, then the resulting rankings support $A \succcurlyeq B$
+
+3. Independence of Irrelevant Alternatives - if $A \succcurlyeq B$ and a new candidate C is introduced, then the new ranking still requires $A \succcurlyeq B$
+
+While this applies to discrete rankings and voter preferences, one might wonder if it's a unique property of its discrete nature in how candidates are only ranked by ordering. Unfortunately, a similarly flavored result holds even in the continuous setting! It seems there's no getting around the fact that voting is pretty hard to get right.
+
+## Chichilnisky Impossibility Theorem
+
+The Chichilnisky Theorem [^2] extends Arrow's Theorem to the continuous setting, but with slightly different constraints.
+
+Suppose that you have a set of $K$ voters choosing between $N$ candidates. Considering only relative preferences, we can represent the preference profile of each voter over the candidates $p_k \in S^{n-1}$ as a unit vector on the sphere, with each coordinate $(p_k)_i$ representing the allotted relative preference for candidate $i$. Denoting $P = S^{n-1}$ as our preference space, then our voting function $phi$ becomes a map $\phi: P^K \to P$ taking some set of preferences $\phi(p_1,\ldots, p_K) \to u$ to a resulting unit vector preference profile.
+
+The Chichilnisky Theorem states the following cannot be jointly satisfied:
+
+1. $\phi$ is smooth [^3] - small changes in voter preferences should result in small changes to $u$
+
+2. $\phi$ respects anonymity - e.g $\phi(p_1, \ldots, p_K) = \phi(p_{\sigma(1)}, \ldots, p_{\sigma(K)})$
+
+3. $\phi$ respects unanimity -  if $p_1 = \cdots = p_K= u$ then $\phi(p_1,\ldots,p_K) = u$
+
+Unfortunately, these very desirable and seemingly innocuous constraints are mutually exclusive.
+
+## Topological Proof
+
+We'll prove the simplest case of two voters and two candidates, which can be naturally generalized. In this scenario $P = S^1$ and $\phi: P\times P \to P$. The high level idea, is to form two different paths in $P\times P$ that have a different number of elements in their preimage under $\phi$ modulo 2 and show that these paths can actually map onto one another forming a contradiction.
+
+For the first path, consider the diagonal $D = \left \{ (\alpha, \alpha) : \alpha \in P \right\}$ which visually forms a circle. If we restrict $\phi \vert D$, then by the unanimity condition we know that $\phi\vert D(\alpha,\alpha)=\alpha$ and the Jacobian is non-zero $d\phi \vert D \neq 0$. Counting the elements in $\phi^{-1}(\alpha)$ and noting that outside of $D$ the points in the preimage pair up by our symmetry condition, it's clear the $\phi \vert D$ is of $\deg 1$.
+
+For our second path, let's take $A = \{\alpha\} \cup S^1$ and its symmetric counterpart $B = S^1 \cup \{\alpha\}$ for some $\alpha\in P$ which form a figure-eight. If we look at the restriction $\phi \vert A\cup B$, then again by symmetry, we see that $\deg \phi \ A\cup B = 0 \mod 2$ at any regular value by pairing points in the preimage from both sides of the figure-eight. Clearly $A$ and $B$ intersect at just the one point $(\alpha,\alpha)\in D$ non-smoothly but otherwise form a connected path. So if we take a small $\epsilon$ sized smooth deformation at $D\cap (A\cup B)$ to shift away from the intersection at $(\alpha,\alpha)$ to form a non self-intersecting loop $\widetilde{A \cup B}$, then $\deg \phi \vert \widetilde{A\cup B} = 0\mod 2$ at all of its regular points as well.
+
+Finally, we can find a homotopy to smoothly deform $\widetilde{A\cup B}$ into $D$ (they're both just loops now) which produces a contradiction as $\deg \phi\vert D \neq \deg\phi\vert \widetilde{A\cup B}$!
+
+#### Footnotes
+
+[^1]: [Arrow's Theorem](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem)
+
+[^2]: [Chichilnisky Theorem](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1367741)
+
+[^3]: Only continuity is actually required, but you can approximate the continuous map arbitrarily closely with a smooth one, and this simplifies the proof
