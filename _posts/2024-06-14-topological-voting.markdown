@@ -6,11 +6,11 @@ comments: true
 published: true
 ---
 
-Back in college, I developed an interest in unexpected impossibility proofs applied to real world systems. The fact that certain abstract mathematical structures inherently have limitations which profoundly impact actual applications is both captivating and sobering. Here's a cute instance of topological properties applied to voting systems a friend shared with me.
+Back in college, I developed an interest in unexpected impossibility proofs applied to real world systems. The fact that certain abstract mathematical structures inherently have limitations which profoundly impact actual applications is both captivating and sobering. Here's a cute instance of topological properties applied to voting systems a friend shared with me through [this video](https://youtu.be/v5ev-RAg7Xs?si=X1LY6Qc_s-HDqI3S) (we'll take a slightly different approach).
 
 ## Background: Arrow's Theorem
 
-Arrow's Theorem[^1] is the most famous impossibility theorem applied to voting systems -- lots of articles and papers have spent time introducing and discussing its implications. In essence, Arrow's Theorem states that a voting process which ranks candidates in should satisfy:
+Arrow's Theorem[^1] is the most famous impossibility theorem applied to voting systems -- lots of articles and papers have spent time introducing and discussing its implications. In essence, Arrow's Theorem states that a voting process which ranks candidates in an absolute total order cannot simultaneously satisfy:
 
 1. Non-Dictatorship - no single voter dominates the output preferences
 
@@ -18,7 +18,7 @@ Arrow's Theorem[^1] is the most famous impossibility theorem applied to voting s
 
 3. Independence of Irrelevant Alternatives - if $$A \succcurlyeq B$$ and a new candidate C is introduced, then the new ranking still requires $$A \succcurlyeq B$$
 
-While this applies to discrete rankings and voter preferences, one might wonder if it's a unique property of its discrete nature in how candidates are only ranked by ordering. Unfortunately, a similarly flavored result holds even in the continuous setting! It seems there's no getting around the fact that voting is pretty hard to get right.
+While this applies to discrete rankings and voter preferences, one might wonder if it's a unique property of its discrete nature in how candidates are only ranked by ordering. Instead of discrete rankings, could a continuous preference ranking satisfy similar conditions? Unfortunately, a similarly flavored impossibility result holds even in the continuous setting! It seems there's no getting around the fact that voting is pretty hard to get right.
 
 ## Chichilnisky Impossibility Theorem
 
@@ -33,8 +33,6 @@ The Chichilnisky Theorem states the following cannot be jointly satisfied:
 2. $$\phi$$ respects anonymity - e.g $$\phi(p_1, \ldots, p_K) = \phi(p_{\sigma(1)}, \ldots, p_{\sigma(K)})$$
 
 3. $$\phi$$ respects unanimity -  if $$p_1 = \cdots = p_K= u$$ then $$\phi(p_1,\ldots,p_K) = u$$
-
-Unfortunately, these very desirable and seemingly innocuous constraints are mutually exclusive.
 
 ### Topological Proof
 
