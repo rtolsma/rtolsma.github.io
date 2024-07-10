@@ -3,7 +3,7 @@ layout: post
 title: "Draft: Thoughts on Robotics"
 categories: thoughts
 comments: true
-published: false
+published: true
 ---
 
 Last fall, I spent a couple of months actively researching the robotics space for problems to solve or good companies to join. My background from working on RL research with Dorsa and Chelsea's labs during undergrad, and the rapid capability improvements we've witnessed in the last three years had me pretty excited. A lot has changed, but I thought it would be useful to share with others some of the high-level insights and frameworks I arrived at after talking to researchers, founders, VCs, suppliers, and clients in the industry before deciding for myself not to re-enter the field yet.
