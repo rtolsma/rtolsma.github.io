@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Draft: Thoughts on Robotics"
+title: "Some Thoughts on Robotics"
 categories: thoughts
 comments: true
 published: true
 ---
 
-Last fall, I spent a couple of months actively researching the robotics space for problems to solve or good companies to join. My background from working on RL research with Dorsa and Chelsea's labs during undergrad, and the rapid capability improvements we've witnessed in the last three years had me pretty excited. A lot has changed, but I thought it would be useful to share with others some of the high-level insights and frameworks I arrived at after talking to researchers, founders, VCs, suppliers, and clients in the industry before deciding for myself not to re-enter the field yet.
+Last fall, I spent a couple of months actively researching the robotics space for problems to solve or good companies to join. My background from working on RL research with Dorsa and Chelsea's labs during undergrad, and the rapid capability improvements we've witnessed in the last three years had me pretty excited. A lot has changed, but I thought it would be useful to share with others a draft of some of the high-level insights and frameworks I arrived at after talking to researchers, founders, VCs, suppliers, and clients in the industry before deciding for myself not to re-enter the field yet.
+
+# Draft Notes
 
 ## Where can a VC scale business be built in robotics?
 
@@ -63,4 +65,4 @@ I've sorted the following list by my personal opinion of most to least solved an
 
 ## Conclusion
 
-There's a ton to expand on here across the stack, including a lot of key components I'm leaving out, but I'm hoping that others interested in starting or evaluating robotics companies will find this useful. While I'm not currently involved or actively looking right now, I'm still very excited and interested in the five-year horizon, and would love to hear any pushback or new insights.
+There's a ton to expand on here across the stack, including a lot of key components I'm leaving out, but I'm hoping that others interested in starting or evaluating robotics companies will find this useful. While I'm not currently involved or actively looking right now, I'm still very excited and interested in the five-year horizon, and would love to hear any pushback or new insights you might have.
