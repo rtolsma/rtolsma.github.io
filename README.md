@@ -1,1 +1,10 @@
-A repository to keep track of a blog/personal website. Should probably link to an email server and improve the visuals
+# Ryan Tolsma's Blog
+
+Personal blog built with Jekyll. Minimalist design focused on technical writing.
+
+## Development
+
+```bash
+just setup  # Install dependencies
+just dev    # Run local development server
+```

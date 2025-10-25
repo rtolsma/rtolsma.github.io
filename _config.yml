@@ -19,7 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Ryan Tolsma
-email: 1tolsmar[at]gmail[dot]com
 description: >- # this means to ignore newlines until "baseurl:"
   links go brrr
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -28,9 +27,6 @@ url: "http://ryantolsma.com" # the base hostname & protocol for your site, e.g. 
 github_username:  rtolsma
 linkedin_username: rtolsma
 twitter_username: waifupika
-
-disqus:
-  shortname: "nvm" #"ryantolsma-com"
 
 markdown: kramdown
 
