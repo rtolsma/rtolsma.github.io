@@ -7,11 +7,9 @@ comments: true
 published: true
 ---
 
-Spring 2020 was a strange time. Covid had just hit, classes went virtual, and I found myself starting a remote internship at Wealthfront from my childhood bedroom. Despite the chaos, I ended up working on one of the most intellectually engaging projects I've had -- building a completely automated roboadvisor for wealth management. The core challenge was solving a massive optimization problem in real-time, and my project centered on implementing a parallelized solver using nested Benders decomposition.
+Spring 2020 was strange. Covid had just hit, I was taking an overloaded virtual class schedule from home, and I found myself starting a full-time remote internship at Wealthfront. Despite the chaos, I ended up working on one of the most intellectually engaging projects I've had -- building a completely automated roboadvisor for wealth management. 
 
-Looking back, it's wild how much of this experience has shaped my thinking about optimization and system design. The wealth management problem turned out to be a perfect testbed for understanding how to decompose complex decision-making into tractable subproblems, and Benders decomposition provided an elegant framework for doing exactly that.
-
-## The Wealth Management Problem
+## Modeling Wealth Management
 
 Wealth management, at its core, is about helping people make better financial decisions over their lifetime. The objective function optimizes economic utility discounted by time and goals -- think retirement savings, buying a house, paying for college, or just maintaining your desired lifestyle. We add soft constraints for objectives like target retirement age, house purchases, college savings, and other life goals that matter to real people.
 
@@ -21,15 +19,15 @@ Constraints come in two flavors. Hard constraints encode the tax system to restr
 
 The optimization spans a user's entire lifetime. In practice, we discretized this into quarterly decision periods and formed a branching tree model where branches represent changes in external environment variables. The key external variables are things like stock returns and bond rates -- uncertain factors that dramatically impact optimal allocation strategies. For a simplified example, consider a 4-node branching structure for 2 external variables (stocks and bonds). We'd take the 4 eigenvector directions that capture maximum variance at roughly 95% confidence using covariance matrices from historical data.
 
-The action space at each time step is actually convex: you're choosing where to allocate your money across accounts to optimize the objective. This is crucial because it means each subproblem, conditional on a particular scenario, has nice properties. But the full problem across all scenarios and time periods? That's a different beast entirely.
+The action space at each time step is actually convex: you're choosing where to allocate your money across accounts to optimize the objective. This lends itself to nice optimal decompositions that be solved efficiently.
 
-## A Mixed Integer Programming Monster
+## Large Optimization Problem
 
 Put it all together and you get a massive mixed integer program. The continuous variables handle account allocations and cash flows. The integer variables encode discrete decisions (shady big-M method?) -- should we buy a house this quarter? Should we retire? These binary decisions couple with the continuous optimization in complex ways that blow up the problem size.
 
 For context, a typical user's lifetime optimization might involve 40 years × 4 quarters = 160 time steps, each with a branching factor of 4 scenarios, giving roughly $$4^{40}$$ paths through the tree (in practice, we branched less frequently or with fewer eigenectors). Each node in this tree has dozens of continuous and integer variables, resulting in a MIP too big to solve in real time using off-the-shelf solvers.
 
-My project was implementing a solver that could actually handle this -- a generic parallelized tree-based algorithm using nested Benders decomposition to break the problem into manageable pieces.
+My project was implementing a solver that could actually handle this, ideally in near real-time to support interactive use cases. I ended up implementing some research with a generic parallelized tree-based algorithm using nested Benders decomposition to break the problem into efficient modular pieces.
 
 ## Nested Benders Decomposition
 
@@ -165,21 +163,21 @@ This eliminates parent decisions that lead to infeasible child states -- crucial
 
 The algorithm proceeds by iteratively solving subproblems at each node, generating cuts, passing them to parents, solving parent problems, and sending updated state values down to children. Convergence is achieved when all nodes' lower bounds (from their master problems) match their upper bounds (from feasible solutions).
 
-### Why This Works for Mixed Integer Programs
+### How is this faster?
 
-The critical advantage of nested Benders for MIPs is that it decomposes the problem in a way that dramatically reduces the branching complexity. Solving the full problem with a standard MIP solver requires exploring the combinatorial space of all binary variables across all time periods and scenarios simultaneously. With $$T$$ time periods, $$S$$ scenarios per period, and $$k$$ binary variables per node, you're looking at a branching tree with $$O((2^k)^{ST})$$ nodes in the worst case. That's computationally hopeless.
+The critical advantage of nested Benders for MIPs is that it decomposes the problem in a way that dramatically reduces the branching complexity. Solving the full problem with a standard MIP solver requires exploring the combinatorial space of all binary variables across all time periods and scenarios simultaneously. With $$T$$ time periods, $$S$$ scenarios per period, and $$k$$ binary variables per node, you're looking at a branching tree with $$O((2^k)^{ST})$$ nodes in the worst case.
 
-Nested Benders breaks this down. At each node $$n$$, the master problem only involves the local binary variables $$u_n \in \{0,1\}^{d_u}$$ for that specific time-scenario pair. The solver explores $$2^{d_u}$$ combinations locally, but critically, it doesn't need to simultaneously explore combinations from other nodes. The coupling between nodes is handled through the cuts, not through explicit enumeration.
+With Nested Benders, for each node $$n$$, the master problem only involves the local binary variables $$u_n \in \{0,1\}^{d_u}$$ for that specific time-scenario pair. The solver explores $$2^{d_u}$$ combinations locally, but critically, it doesn't need to simultaneously explore combinations from other nodes. The coupling between nodes is handled through the cuts, not through explicit enumeration.
 
-Here's the key: when we solve child node $$n'$$'s subproblem, we condition on the parent's state decision $$\bar{z}_{n'}$$. Given that state, the child optimizes over its own binary decisions independently. The child's binary variables are *completely decoupled* from the parent's binary variables in the branch-and-bound tree -- they only interact through the continuous state variables.
+To solve child node $$n'$$'s subproblem, we condition on the parent's state decision $$\bar{z}_{n'}$$. Given that state, the child optimizes over its own binary decisions independently. The child's binary variables are _completely decoupled_ from the parent's binary variables in the branch-and-bound tree -- they only interact through the continuous state variables.
 
 This means the effective branching is $$O(2^{d_u})$$ per node rather than $$O((2^{d_u})^{\vert \mathcal{N} \vert})$$ for the full tree. We've transformed an exponential problem in tree size to a linear problem in tree size with exponential work per node -- and when $$d_u$$ is small (as it often is for real applications), this is tractable.
 
-Additionally, the cuts provide a form of learning across iterations. When we add an optimality cut from a child, we're encoding information about *all possible* future scenarios reachable from that child's subtree. A single cut can eliminate vast regions of the parent's decision space that would lead to poor outcomes downstream. This is far more efficient than explicitly enumerating those scenarios.
+Additionally, the cuts provide a form of learning across iterations. When we add an optimality cut from a child, we're encoding information about _all possible_ future scenarios reachable from that child's subtree. A single cut can eliminate vast regions of the parent's decision space that would lead to poor outcomes downstream. This is far more efficient than explicitly enumerating those scenarios. In some ways, these cuts mirror the message passing propagation of gradients through deep learning backwards propagation, slowly hill climbing towards smooth optimality.
 
-The convex action space (allocation decisions are continuous) is crucial here. It means that conditional on the binary decisions $$u_n$$, each node's problem is a convex LP or QP. Modern solvers crush these in milliseconds. The hard part is the combinatorial search over $$u_n$$, but with small $$d_u$$ and good cuts guiding the search, this remains feasible.
+The convex action space (allocation decisions are continuous) is crucial here. It means that conditional on the binary decisions $$u_n$$, each node's problem is a convex LP or QP which modern solvers can solve in milliseconds. The scaling difficulties come from the combinatorial search over $$u_n$$, but with small $$d_u$$ and good cuts guiding the search, this remains feasible.
 
-### Achieving Real-Time Performance
+### Paralellizing for Scale
 
 Raw Benders decomposition gives us tractability, but real-time performance requires parallelization. The scenario tree structure provides natural parallelism at multiple levels:
 
@@ -189,13 +187,13 @@ Raw Benders decomposition gives us tractability, but real-time performance requi
 
 3. **Iteration-level parallelism**: In some algorithmic variants, we can solve all nodes at a given tree level simultaneously using the current cuts, then propagate results up or down.
 
-For our wealth management problem with $$\sim$$10,000 nodes in the scenario tree, this parallelism is essential. A sequential solve taking 1ms per node would require 10 seconds total -- unacceptable for an interactive application. But with 100-way parallelism, we're down to 100ms of wall-clock time, which is usable.
+For our wealth management problem with $$\sim$$50,000 nodes in the scenario tree, this parallelism is essential. A sequential solve taking 10ms per node, 10 message passes per edge, would require ~2 hours -- unacceptable for an interactive application. But with 256-way parallelism, we're down to ~20s of wall-clock time, which is usable.
 
 The cuts also reduce iteration counts dramatically. In early iterations, subproblems might return wildly suboptimal solutions because the parent's cuts are loose. But as cuts accumulate, the master problems produce better candidate solutions, child subproblems have less work to do (they're already near-optimal), and convergence accelerates. In practice, we'd often see convergence in 5-10 iterations for user updates to an existing solution, compared to hundreds of iterations starting cold.
 
-Warm-starting is another huge win. When a user updates their income or adjusts a goal, most of the scenario tree structure is unchanged. We keep the accumulated cuts from the previous solve and only invalidate nodes whose parameters actually changed. The solver can often reuse solutions from 90%+ of the tree, solving only the affected subtrees from scratch.
+Warm-start caching is another huge win. When a user updates their income or adjusts a goal, most of the scenario tree structure is unchanged. We keep the accumulated cuts from the previous solve and only invalidate nodes whose parameters actually changed. The solver can often reuse solutions from 90%+ of the tree, solving only the affected subtrees from scratch.
 
-### Parallelization Strategies
+### Message Passing Strategies
 
 The tree structure opens up natural parallelization opportunities. Different subtrees can be solved independently (at least partially), and there are multiple algorithmic variants for how to orchestrate the message passing:
 
