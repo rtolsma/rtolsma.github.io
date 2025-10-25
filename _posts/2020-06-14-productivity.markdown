@@ -2,6 +2,7 @@
 layout: post
 title:  "Productionizing Productivity"
 categories: thoughts
+tags: [thinky]
 comments: true
 published: true
 ---

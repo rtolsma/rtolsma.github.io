@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Python: Single Forward Pass Gradients"
+title: "Single Forward Pass Gradients"
 categories: thoughts
+tags: [coding]
 comments: true
-published: true 
+published: true
 ---
 
 # Single Forward Pass Gradients

@@ -2,6 +2,7 @@
 layout: "post"
 title:  "Demistifying Schrodinger's Equation"
 categories: physics
+tags: [physics]
 comments: true
 published: true
 ---

@@ -5,4 +5,4 @@
 layout: home
 ---
 
-Welcome to my blog! Here you will find posts centered on problems I've been thinking about, reflections, fun technical machinery, and random musings.
+Hi. I'm Ryan Tolsma. I love technical challenges and problem solving. I spend my time thinking about startups, reading about healthcare, playing board games with friends, climbing, sailing, and watching anime.

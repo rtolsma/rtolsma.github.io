@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Physics: Special Relativity Speedrun"
+title: "Special Relativity Speedrun"
 categories: physics
+tags: [physics]
 comments: true
 published: true
 ---

@@ -2,8 +2,9 @@
 layout: post
 title: "Reflections on a Stanford Journey"
 categories: thoughts
+tags: [thinky]
 comments: true
-published: true 
+published: true
 ---
 
 It's now been almost two years since graduating from Stanford, and I wanted to carve out a post to reflect deeply on how well I spent my time there, now with the benefit of hindsight, and with the additional goal of informing my future self to bias towards activities that matter longer term. There a variety of ways to measure quality of time, but the core aspects that I've grown to appreciate can be broadly categorized within: social life, health, career, and academics[^1].

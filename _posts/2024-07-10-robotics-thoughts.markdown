@@ -2,6 +2,7 @@
 layout: post
 title: "Some Thoughts on Robotics"
 categories: thoughts
+tags: [thinky]
 comments: true
 published: true
 ---

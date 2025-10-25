@@ -2,8 +2,9 @@
 layout: post
 title: "Fun Derivative Eigenfunctions"
 categories: thoughts
+tags: [math]
 comments: true
-published: true 
+published: true
 ---
 
 I came across [this article](https://thenumb.at/Functions-are-Vectors/) today on top of Hackernews which reminded me of some quant interview questions requiring some clever discrete derivative matrix tricks. I realized after reading the article, that you can construct a new clever proof that $$\frac{d}{dx} \phi(x) = a\phi(x) \iff \phi(x) = e^{ax}$$ in the discrete perspective.

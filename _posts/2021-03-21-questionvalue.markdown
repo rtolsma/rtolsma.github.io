@@ -2,8 +2,9 @@
 layout: post
 title: "The Value of a Question"
 categories: math
+tags: [math]
 comments: true
-published: True 
+published: True
 ---
 
 

@@ -2,5 +2,6 @@
 layout: "post"
 title: "Humanizing Productivity"
 categories: "thoughts"
+tags: [thinky]
 published: false
 ---

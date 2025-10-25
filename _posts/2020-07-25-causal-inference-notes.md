@@ -2,6 +2,7 @@
 layout: "post"
 title: "Notes on Causal Inference"
 categories: "statistics"
+tags: [math]
 published: false
 ---
 

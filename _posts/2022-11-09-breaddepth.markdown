@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Careers: Modelling Breadth vs. Depth"
+title: "Modelling Breadth vs. Depth"
 categories: thoughts
+tags: [thinky]
 comments: true
-published: false 
+published: false
 ---
 
 # TODO TODO THIS INTRO SOUNDS BAD

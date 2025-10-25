@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Physics: Topological Fun Facts"
+title:  "Topological Fun Facts"
 categories: physics
+tags: [physics]
 comments: true
-published: true 
+published: true
 ---
 
 

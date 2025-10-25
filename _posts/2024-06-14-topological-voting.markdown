@@ -2,6 +2,7 @@
 layout: post
 title: "Topological Problems in Voting"
 categories: thoughts
+tags: [math]
 comments: true
 published: true
 ---

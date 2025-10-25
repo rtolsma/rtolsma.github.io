@@ -2,12 +2,26 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
-  min-height: $spacing-unit * 1.865;
+  display: none;
+}
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
+.intro-with-pic {
+  display: flex;
+  gap: $spacing-unit;
+  align-items: flex-start;
+  margin-bottom: $spacing-unit;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.intro-text {
+  flex: 1;
 }
 
 .site-title {
@@ -195,7 +209,28 @@
   list-style: none;
 
   >li {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit / 2;
+  }
+}
+
+.post-item {
+  display: flex;
+  gap: $spacing-unit;
+  align-items: baseline;
+}
+
+.post-date {
+  font-size: $small-font-size;
+  color: $grey-color;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.post-info {
+  flex: 1;
+
+  h3 {
+    margin: 0;
   }
 }
 
@@ -206,7 +241,7 @@
 
 .post-link {
   display: block;
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.1);
 }
 
 

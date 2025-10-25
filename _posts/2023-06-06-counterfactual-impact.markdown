@@ -2,8 +2,9 @@
 layout: post
 title: "Modelling Counterfactual Impact"
 categories: thoughts
+tags: [thinky]
 comments: true
-published: true 
+published: true
 ---
 
 You're a bright young kid striving to change the world. As a pure bred rationalist, you of course seek to maximize your counterfactual altruistic impact, but in practice, what does that mean?
