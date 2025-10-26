@@ -17,7 +17,7 @@ In a typical egg harvest, you get maybe 10-15 viable embryos if you're lucky, ra
 
 With IVF selection effectively choosing the max of $$N$$ samples based on some objective function, and given our sample sizing that translates to just 3-7 bits of selection power.
 
-But it gets worse when you account for how these traits actually work genetically. Height is controlled by thousands of genetic variants. IQ is even more polygenic. They're sums of thousands of small effects with few if any big hitters. Pulling in the Central Limit Theorem, we can model each embryo's genetic potential distribution $$X$$ for a polygenic trait as a sum of $$K$$ normally distributed variables contributing to the phenotype effect. Depending on the polygeneity of the phenotype, the variance of $$X$$ can already be quite small across samples, as $$\sigma \sim O(\frac{1}{\sqrt{k}})$$.
+But it gets worse when you account for how these traits actually work genetically. Height is controlled by thousands of genetic variants. IQ is even more polygenic. They're sums of thousands of small effects with few if any big hitters. We can model each embryo's genetic potential distribution $$X$$ for a polygenic trait as a sum of $$K$$ i.i.d variables contributing to the phenotype effect, which by the Central Limit Theorem implies $$X$$ can be modeled as a normal distribution. Depending on the polygeneity of the phenotype, the variance of $$X$$ can already be quite small across samples, as $$\sigma \sim O(\frac{1}{\sqrt{k}})$$.
 
 The question then becomes, can we improve on $$E[X]$$? How much better can we do by selecting $$N$$ samples from $$X$$?
 
