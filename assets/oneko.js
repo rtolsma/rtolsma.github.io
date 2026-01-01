@@ -1,12 +1,6 @@
 // oneko.js: https://github.com/adryd325/oneko.js
 
 (function oneko() {
-  const isReducedMotion =
-    window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
-    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
-
-  if (isReducedMotion) return;
-
   // Capture script data attributes now (before load event, when currentScript is available)
   const curScript = document.currentScript;
   const nekoFileFromData = curScript && curScript.dataset.cat;
@@ -117,7 +111,9 @@
     let hasStoredPosition = false;
     if (persistPosition) {
       let storedNeko = JSON.parse(window.localStorage.getItem("oneko"));
-      if (storedNeko !== null) {
+      // Check if stored data exists and is less than 10 minutes old
+      const TEN_MINUTES = 10 * 60 * 1000;
+      if (storedNeko !== null && storedNeko.timestamp && (Date.now() - storedNeko.timestamp) < TEN_MINUTES) {
         nekoPosX = storedNeko.nekoPosX;
         nekoPosY = storedNeko.nekoPosY;
         mousePosX = storedNeko.mousePosX;
@@ -128,6 +124,9 @@
         idleAnimationFrame = storedNeko.idleAnimationFrame;
         nekoEl.style.backgroundPosition = storedNeko.bgPos;
         hasStoredPosition = true;
+      } else if (storedNeko !== null) {
+        // Clear expired data
+        window.localStorage.removeItem("oneko");
       }
     }
 
@@ -171,7 +170,8 @@
           idleTime: idleTime,
           idleAnimation: idleAnimation,
           idleAnimationFrame: idleAnimationFrame,
-          bgPos: nekoEl.style.backgroundPosition
+          bgPos: nekoEl.style.backgroundPosition,
+          timestamp: Date.now()
         }));
       });
     }
