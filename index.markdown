@@ -5,4 +5,4 @@
 layout: home
 ---
 
-Hi. I'm Ryan Tolsma. I love technical challenges and problem solving. I spend my time thinking about startups, reading about healthcare, playing board games with friends, climbing, sailing, and watching anime. *Sola Christus*.
+Hi. I'm Ryan Tolsma. I love technical challenges and problem solving. I spend my time thinking about startups, reading about healthcare, playing board games with friends, climbing, sailing, and watching anime. Currently working on [Adaptive Innovations](https://www.adaptive.co/). *Sola Christus*.
