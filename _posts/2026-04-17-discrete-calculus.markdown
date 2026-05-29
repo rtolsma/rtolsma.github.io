@@ -37,7 +37,7 @@ $$
 \Delta x^{\overline{n}} = x^{\overline{n}} - (x-1)^{\overline{n}} = \big[x(x+1)\cdots(x+n-2)\big]\big[(x+n-1) - (x-1)\big] = n\, x^{\overline{n-1}}
 $$
 
-just like with $$\frac{d}{dx}$$. There's a product rule too, with one discrete wrinkle, just requiring a shift on the second factor: $$\Delta(uv) = v\,\Delta u + u(x{-}1)\,\Delta v$$. Summing both sides gives summation by parts, the analogue of integration by parts: $$\sum_{x=a}^{b} v\,\Delta u = uv\big|_{a-1}^{b} - \sum_{x=a}^{b} u(x{-}1)\,\Delta v$$, which resolves terms like $$\sum x\,2^x$$ exactly the way $$\int x e^x\,dx$$ yields to parts.
+just like with $$\frac{d}{dx}$$. There's a product rule too, with one discrete wrinkle, just requiring a shift on the second factor: $$\Delta(uv) = v\,\Delta u + u(x{-}1)\,\Delta v$$. Summing both sides gives summation by parts, the analogue of integration by parts: $$\sum_{x=a}^{b} v\,\Delta u = uv\big\rvert_{a-1}^{b} - \sum_{x=a}^{b} u(x{-}1)\,\Delta v$$, which resolves terms like $$\sum x\,2^x$$ exactly the way $$\int x e^x\,dx$$ yields to parts.
 
 The chain rule is the one place the analogy breaks: $$\Delta f(g(x)) = f(g(x)) - f(g(x-1))$$ won't factor unless $$g$$ is affine (e.g shifting $$g(x) = x+c$$ just reindexes, $$\Delta g(x+c) = (\Delta g)(x+c)$$) since differences care about integer steps and most $$g$$ don't preserve them.
 
