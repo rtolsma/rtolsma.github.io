@@ -7,15 +7,15 @@ comments: true
 published: true
 ---
 
-I've always found Fourier transforms to be one of those mathematical tools that is often taught in a way that feels more computational than conceptual. You learn that complicated functions can be decomposed into sums of sines and cosines, and then after enough exposure it becomes natural that heat equations, wave equations, signal processing, and harmonic functions all mysteriously want to be written in this basis. But there's a sharper way to cut through: Fourier analysis is what happens when you diagonalize translation symmetry.
+There are many ways to motivate Fourier analysis, and recently I discovered a new one: fourier transforms are what happens when you diagonalize translation symmetry.
 
-The underlying object to look at is the translation operator. For a function $$f:\mathbb{R}\to \mathbb{C}$$, define
+For a function $$f:\mathbb{R}\to \mathbb{C}$$, define the translation operator
 
 $$
 T(a)f(x) = f(x-a)
 $$
 
-where $$a\in\mathbb{R}$$ represents the amount we shift our function. These operators form a Lie group under composition, since $$T(a)T(b)=T(a+b)$$ and $$T(0)=I$$. So before saying anything about Fourier transforms, we already have a continuous group acting on our function space. The natural representation-theoretic question is: what are the irreducible modes of this group action?
+where $$a\in\mathbb{R}$$ represents the amount we shift our function. These operators form a Lie group under composition, since $$T(a)T(b)=T(a+b)$$ and $$T(0)=I$$. The natural representation-theoretic question is: what are the irreducible modes of this group action?
 
 ## The Generator of Translations
 
@@ -62,13 +62,13 @@ $$
 
 ## Commuting with Symmetry
 
-The representation-theoretic payoff comes when we look at other operators that respect translation symmetry. Suppose $$L$$ is some linear operator acting on functions and it commutes with translations:
+The representation-theoretic framing comes when we look at other operators that respect translation symmetry. Suppose $$L$$ is some linear operator acting on functions and it commutes with translations:
 
 $$
 \left[L, T(a)\right] = 0
 $$
 
-for every $$a$$. By the general philosophy behind Schur's lemma, an operator that commutes with a group action preserves the irreducible pieces of that representation. On each irreducible piece, it acts by a scalar; when multiple equivalent copies appear, it can only mix those degenerate copies. So once we've decomposed into translation eigenfunctions, $$L$$ acts by scalar multiplication on each mode, up to the usual degeneracies.
+for every $$a$$. As a consequence of Schur's lemma, an operator that commutes with a group action preserves the irreducible pieces of that representation (via isomorphism) or degenerately vanishes. On each irreducible piece, it acts by a scalar; when multiple equivalent copies appear, it can only mix those multiplicities. So once we've decomposed into translation eigenfunctions, $$L$$ acts by scalar multiplication on each mode, up to the usual degeneracies.
 
 This is why translation-invariant operators are diagonalized by the Fourier basis. If $$L$$ commutes with all $$T(a)$$, and $$e^{ikx}$$ spans an irreducible translation mode, then $$L e^{ikx}$$ must transform under translations in the same way as $$e^{ikx}$$. So $$L e^{ikx}$$ is proportional to $$e^{ikx}$$:
 
@@ -88,7 +88,7 @@ $$
 
 which commutes with translations in Euclidean space. Shifting a function and then taking its second derivatives gives the same result as taking its second derivatives and then shifting. So by the symmetry argument above, the Laplacian must be diagonal in the translation eigenbasis.
 
-Indeed, for plane waves $$e^{ik\cdot x}$$, we have
+In E&M we learn that plane waves are non-normalizable (translation symmetries!) and represented by $$e^{ik\cdot x}$$, with which we have
 
 $$
 \nabla^2 e^{ik\cdot x} = -\vert k\vert^2 e^{ik\cdot x}
